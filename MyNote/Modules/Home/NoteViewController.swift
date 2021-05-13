@@ -23,20 +23,23 @@ class NoteViewController: UIViewController {
     }
     
     func setupBindings() {
-        
+        vcView.noteTableView.delegate = self
+        vcView.noteTableView.dataSource = self
     }
 }
 
 //MARK: - UITableViewDataSource
 extension NoteViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        guard let cell = vcView.noteTableView.dequeueReusableCell(withIdentifier: "NoteTableViewCell") as? NoteTableViewCell else {
+            fatalError()
+        }
+        cell.textLabel?.text = "Hello from June"
         return cell
-        
     }
 }
 

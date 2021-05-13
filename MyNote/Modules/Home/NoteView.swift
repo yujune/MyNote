@@ -10,6 +10,11 @@ import UIKit
 
 class NoteView: UIView {
     
+    @IBOutlet weak var noteTableView: UITableView! {
+        didSet {
+            noteTableView.register(UINib(nibName: "NoteTableViewCell", bundle: nil), forCellReuseIdentifier: "NoteTableViewCell")
+        }
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.customInit()
