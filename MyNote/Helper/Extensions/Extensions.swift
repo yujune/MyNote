@@ -7,6 +7,12 @@
 
 import UIKit
 
+extension String {
+    func localized() -> String {
+        return NSLocalizedString(self, comment: "")
+    }
+}
+
 extension UIView {
     @discardableResult
     func fromNib<T : UIView>() -> T? {
