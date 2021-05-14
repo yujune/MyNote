@@ -25,13 +25,13 @@ class NoteTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func updateDisplay(note: NoteModel){
+    func updateDisplay(note: Note){
         setUpNoteTagListView(note)
         noteTitle.text = note.title
         noteCreatedDate.text = note.createdDate
     }
     
-    private func setUpNoteTagListView(_ note: NoteModel) {
+    private func setUpNoteTagListView(_ note: Note) {
         var tagIndex = 0
         noteTagListView.removeAllTags()
         if note.isFavourite ?? false {

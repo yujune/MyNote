@@ -5,9 +5,8 @@
 //  Created by Tee Yu June on 14/05/2021.
 //
 
-
-import Foundation
 import UIKit
+import CoreData
 
 class NoteDetailsViewModel: NoteDetailsViewModelProtocol {
     var showErrorMessage: ((String) -> Void)?

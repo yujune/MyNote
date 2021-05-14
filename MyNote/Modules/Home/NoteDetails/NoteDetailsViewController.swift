@@ -27,7 +27,20 @@ class NoteDetailsViewController: UIViewController {
     }
     
     @objc func saveBarButtonPressed(){
-        //save to core data.
+        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let newNote = Note(context: context)
+        newNote.title = vcView.title.text
+        newNote.category = vcView.categoryLabel.text
+        newNote.isFavourite = false
+        newNote.createdDate = Date.getCurrentDateInString(dateStyle: .medium)
+        
+        do {
+            try context.save()
+        }catch {
+            print("Error saving context\(error)")
+        }
+        
     }
 }
 

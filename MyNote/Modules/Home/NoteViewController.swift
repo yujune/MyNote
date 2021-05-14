@@ -20,6 +20,8 @@ class NoteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBindings()
+        viewModel.loadData()
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
     }
     
     func setupBindings() {
@@ -32,7 +34,7 @@ class NoteViewController: UIViewController {
 //MARK: - UITableViewDataSource
 extension NoteViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return NoteModel.dummyData.count
+        return viewModel.noteArray?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -40,7 +42,7 @@ extension NoteViewController: UITableViewDataSource {
             fatalError()
         }
         cell.selectionStyle = .none
-        cell.updateDisplay(note: NoteModel.dummyData[indexPath.row])
+        cell.updateDisplay(note: viewModel.noteArray?[indexPath.row] ?? Note())
         return cell
     }
 }
