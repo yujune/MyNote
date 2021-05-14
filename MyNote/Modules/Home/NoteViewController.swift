@@ -25,6 +25,7 @@ class NoteViewController: UIViewController {
     func setupBindings() {
         vcView.noteTableView.delegate = self
         vcView.noteTableView.dataSource = self
+        vcView.noteTableView.tableFooterView = UIView()
     }
 }
 
