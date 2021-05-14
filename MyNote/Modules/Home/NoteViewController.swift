@@ -27,7 +27,14 @@ class NoteViewController: UIViewController {
     func setupBindings() {
         vcView.noteTableView.delegate = self
         vcView.noteTableView.dataSource = self
+        vcView.searchBar.delegate = self
         vcView.noteTableView.tableFooterView = UIView()
+        viewModel.reloadNoteTableView = { [weak self] in
+            guard let weakSelf = self else{
+                return
+            }
+            weakSelf.vcView.noteTableView.reloadData()
+        }
     }
 }
 
@@ -51,7 +58,18 @@ extension NoteViewController: UITableViewDataSource {
 extension NoteViewController: UITableViewDelegate {
 }
 
-//MARK: - Private
-extension NoteViewController {
+//MARK: - Search Bar
+extension NoteViewController: UISearchBarDelegate {
     
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        if searchBar.text?.isEmpty ?? true {
+            viewModel.loadData()
+        }else {
+            viewModel.searchNote(for: searchBar.text ?? "")
+        }
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.vcView.searchBar.endEditing(true)
+    }
 }

@@ -83,7 +83,7 @@
                         </view>
                         <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search notes..." translatesAutoresizingMaskIntoConstraints="NO" id="dbD-dF-dNe">
                             <rect key="frame" x="0.0" y="85" width="375" height="56"/>
-                            <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
                         </searchBar>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cYb-7d-EbX">
                             <rect key="frame" x="0.0" y="146" width="375" height="521"/>

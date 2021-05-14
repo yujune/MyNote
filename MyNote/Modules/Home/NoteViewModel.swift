@@ -11,6 +11,7 @@ import CoreData
 class NoteViewModel: NoteViewModelProtocol {
     var showErrorMessage: ((String) -> Void)?
     var showInfoMessage: ((String) -> Void)?
+    var reloadNoteTableView: (() -> Void)?
     var noteArray: [Note]?
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -21,6 +22,21 @@ class NoteViewModel: NoteViewModelProtocol {
         }catch {
             print("Error fetching data from context \(error)")
         }
+        reloadNoteTableView?()
+    }
+    
+    func searchNote(for title: String){
+        let request : NSFetchRequest<Note> = Note.fetchRequest()
+        let predicate = NSPredicate(format: "title CONTAINS[cd] %@", title)
+        request.predicate = predicate
         
+        let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
+        request.sortDescriptors = [sortDescriptor]
+        do {
+            noteArray = try context.fetch(request)
+        }catch {
+            print("Error fetching data from context \(error)")
+        }
+        reloadNoteTableView?()
     }
 }
