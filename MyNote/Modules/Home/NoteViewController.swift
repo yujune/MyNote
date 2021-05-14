@@ -38,6 +38,7 @@ extension NoteViewController: UITableViewDataSource {
         guard let cell = vcView.noteTableView.dequeueReusableCell(withIdentifier: "NoteTableViewCell") as? NoteTableViewCell else {
             fatalError()
         }
+        cell.selectionStyle = .none
         cell.updateDisplay(note: NoteModel.dummyData[indexPath.row])
         return cell
     }

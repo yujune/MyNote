@@ -24,6 +24,9 @@ class BaseCoordinator: Coordinator {
         
         childCoordinators.append(coordinator)
     }
-    
-    
+}
+
+extension BaseCoordinator: BarButtonItemProtocol {
+    func addBarButtonPressed() {
+    }
 }
