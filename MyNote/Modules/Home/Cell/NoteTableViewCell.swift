@@ -34,35 +34,29 @@ class NoteTableViewCell: UITableViewCell {
     private func setUpNoteTagListView(_ note: Note) {
         var tagIndex = 0
         noteTagListView.removeAllTags()
-        if note.isFavourite ?? false {
+    
+        noteTagListView.addTag(note.parentCategory?.name ?? "")
+        noteTagListView.tagViews[tagIndex].tagBackgroundColor = getCategoryUIColor(from: note.parentCategory?.color ?? "")
+        noteTagListView.textColor = UIColor.black
+        
+        if note.isFavourite {
             noteTagListView.addTag("Favourite")
             noteTagListView.tagViews[tagIndex].tagBackgroundColor = UIColor.yellow
             noteTagListView.textColor = UIColor.black
             tagIndex += 1
         }
-        
-        switch note.category {
-        case Category.personal.rawValue:
-            noteTagListView.addTag(Category.personal.rawValue)
-            noteTagListView.tagViews[tagIndex].tagBackgroundColor = UIColor.green
-            noteTagListView.textColor = UIColor.black
-            
-            break
-        case Category.finance.rawValue:
-            noteTagListView.addTag(Category.finance.rawValue)
-            noteTagListView.tagViews[tagIndex].tagBackgroundColor = UIColor.red
-            noteTagListView.textColor = UIColor.black
-            
-            break
-        case Category.other.rawValue:
-            noteTagListView.addTag(Category.other.rawValue)
-            noteTagListView.tagViews[tagIndex].tagBackgroundColor = UIColor.gray
-            noteTagListView.textColor = UIColor.black
-            
-            break
-        default:
-            break
-        }
     }
     
+    private func getCategoryUIColor(from color: String) -> UIColor {
+        switch color {
+        case CategoryColor.red.rawValue:
+            return UIColor.red
+        case CategoryColor.blue.rawValue:
+            return UIColor.blue
+        case CategoryColor.gray.rawValue:
+            return UIColor.gray
+        default:
+            return UIColor.gray
+        }
+    }
 }

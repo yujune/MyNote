@@ -16,10 +16,15 @@ class NoteDetailsViewModel: NoteDetailsViewModelProtocol {
     func saveData(newNote note: NoteModel) {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let newNote = Note(context: context)
+        let newNoteCategory = Category(context: context)
+        newNoteCategory.name = note.category?.name
+        newNoteCategory.color = note.category?.color
+        
         newNote.title = note.title
-        newNote.category = note.category
         newNote.isFavourite = note.isFavourite ?? false
         newNote.createdDate = note.createdDate
+        newNote.detailsText = note.detailsText
+        newNote.parentCategory = newNoteCategory
         
         do {
             try context.save()

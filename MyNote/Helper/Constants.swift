@@ -7,8 +7,17 @@
 
 import UIKit
 
-enum Category: String {
-    case finance = "finance"
-    case personal = "personal"
-    case other = "other"
+enum CategoryName: String {
+    case personal = "Personal"
+    case finance = "Finance"
+    case other = "Other"
+}
+
+enum CategoryColor: String {
+    case red = "red"
+    case blue = "blue"
+    case yellow = "yellow"
+    case green = "green"
+    case gray = "gray"
+    case orange = "orange"
 }

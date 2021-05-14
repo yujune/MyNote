@@ -27,8 +27,9 @@ class NoteDetailsViewController: UIViewController {
     }
     
     @objc func saveBarButtonPressed(){
+        let newNoteCategory = CategoryModel(name: vcView.categoryLabel.text)
         
-        let newNote = NoteModel(title: vcView.title.text, createdDate: Date.getCurrentDateInString(dateStyle: .medium), category: vcView.categoryLabel.text, isFavourite: false)
+        let newNote = NoteModel(title: vcView.title.text, createdDate: Date.getCurrentDateInString(dateStyle: .medium), isFavourite: false, detailsText: vcView.noteDetailsTextView.text, category: newNoteCategory)
         
         viewModel.saveData(newNote: newNote)
     }
