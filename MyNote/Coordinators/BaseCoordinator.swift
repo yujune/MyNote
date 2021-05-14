@@ -24,9 +24,16 @@ class BaseCoordinator: Coordinator {
         
         childCoordinators.append(coordinator)
     }
+    
+    func navigateToNoteDetails(){
+        let vc = NoteDetailsViewController()
+        vc.viewModel = NoteDetailsViewModel()
+        navigationController.pushViewController(vc, animated: true)
+    }
 }
 
 extension BaseCoordinator: BarButtonItemProtocol {
     func addBarButtonPressed() {
+        navigateToNoteDetails()
     }
 }
