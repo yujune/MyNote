@@ -70,6 +70,17 @@ extension NoteViewController: UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        self.vcView.searchBar.endEditing(true)
+        searchBar.endEditing(true)
+    }
+    
+    //dismiss keyboard and textField cursor when cancel button is clicked.
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text?.count == 0 {
+            viewModel.loadData()
+            
+            DispatchQueue.main.async {
+                searchBar.resignFirstResponder()
+            }
+        }
     }
 }
