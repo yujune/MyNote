@@ -23,7 +23,11 @@ class NoteDetailsViewController: UIViewController {
     }
     
     func setupBindings() {
-        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveBarButtonPressed))
+    }
+    
+    @objc func saveBarButtonPressed(){
+        //save to core data.
     }
 }
 
