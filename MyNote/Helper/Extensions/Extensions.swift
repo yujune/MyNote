@@ -13,6 +13,16 @@ extension String {
     }
 }
 
+extension Date {
+    static func getCurrentDateInString(dateStyle: DateFormatter.Style) -> String {
+        let now = Date()
+        let formatter = DateFormatter()
+        formatter.dateStyle = dateStyle
+        let datetime = formatter.string(from: now)
+        return datetime
+    }
+}
+
 extension UIView {
     @discardableResult
     func fromNib<T : UIView>() -> T? {
