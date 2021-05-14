@@ -15,8 +15,7 @@ class NoteViewModel: NoteViewModelProtocol {
     var noteArray: [Note]?
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    func loadData(){
-        let request : NSFetchRequest<Note> = Note.fetchRequest()
+    func loadData(with request: NSFetchRequest<Note> = Note.fetchRequest()){
         do {
             noteArray = try context.fetch(request)
         }catch {
@@ -32,11 +31,7 @@ class NoteViewModel: NoteViewModelProtocol {
         
         let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
         request.sortDescriptors = [sortDescriptor]
-        do {
-            noteArray = try context.fetch(request)
-        }catch {
-            print("Error fetching data from context \(error)")
-        }
+        loadData(with: request)
         reloadNoteTableView?()
     }
 }
