@@ -8,7 +8,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoteDetailsView" customModule="MyNote" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoteDetailsView" customModule="MyNote" customModuleProvider="target">
+            <connections>
+                <outlet property="categoryButton" destination="yZO-Qu-aK7" id="cWx-dA-lmN"/>
+                <outlet property="categoryLabel" destination="QDp-hM-7Vm" id="LIa-s9-VLe"/>
+                <outlet property="createdDate" destination="wIg-7P-gsn" id="aCy-w3-gHT"/>
+                <outlet property="noteDetailsTextView" destination="vox-0u-PVP" id="KHq-ZH-LAA"/>
+                <outlet property="title" destination="4xs-9I-3nN" id="KOB-2r-chb"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>

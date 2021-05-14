@@ -10,6 +10,12 @@ import UIKit
 
 class NoteDetailsView: UIView {
     
+    @IBOutlet weak var title: UITextField!
+    @IBOutlet weak var createdDate: UILabel!
+    @IBOutlet weak var categoryButton: UIButton!
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var noteDetailsTextView: UITextView!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.customInit()

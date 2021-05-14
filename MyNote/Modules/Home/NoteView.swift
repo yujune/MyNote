@@ -10,6 +10,11 @@ import UIKit
 
 class NoteView: UIView {
     
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var categoryButton: UIButton!
+    @IBOutlet weak var notesCountLabel: UILabel!
     @IBOutlet weak var noteTableView: UITableView! {
         didSet {
             noteTableView.register(UINib(nibName: "NoteTableViewCell", bundle: nil), forCellReuseIdentifier: "NoteTableViewCell")
