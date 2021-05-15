@@ -6,25 +6,40 @@
 //
 
 
-import Foundation
 import UIKit
+import CoreData
 
 class NoteDetailsViewModel: NoteDetailsViewModelProtocol {
     var showErrorMessage: ((String) -> Void)?
     var showInfoMessage: ((String) -> Void)?
+    var selectedCategory: Category?
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    func getSelectedCategory(name: String) -> Category? {
+        let request : NSFetchRequest<Category> = Category.fetchRequest()
+        let predicate = NSPredicate(format: "name MATCHES %@", name)
+        request.predicate = predicate
+        
+        do{
+            selectedCategory = try context.fetch(request)[0]
+        }catch {
+            print("Error fetching data from context \(error)")
+        }
+        
+        return selectedCategory
+    }
     
     func saveData(newNote note: NoteModel) {
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        let newNote = Note(context: context)
-        let newNoteCategory = Category(context: context)
-        newNoteCategory.name = note.category?.name
-        newNoteCategory.color = note.category?.color
+        guard let selectedCategory = getSelectedCategory(name: note.category?.name ?? "") else {
+            return
+        }
         
+        let newNote = Note(context: context)
         newNote.title = note.title
         newNote.isFavourite = note.isFavourite ?? false
         newNote.createdDate = note.createdDate
         newNote.detailsText = note.detailsText
-        newNote.parentCategory = newNoteCategory
+        newNote.parentCategory = selectedCategory
         
         do {
             try context.save()
