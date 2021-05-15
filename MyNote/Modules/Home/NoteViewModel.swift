@@ -33,6 +33,15 @@ class NoteViewModel: NoteViewModelProtocol {
         }
     }
     
+    func filterNote(with name: String){
+        let request : NSFetchRequest<Note> = Note.fetchRequest()
+        let categoryPredicate = NSPredicate(format: "parentCategory.name MATCHES %@", name)
+        request.predicate = categoryPredicate
+        let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
+        request.sortDescriptors = [sortDescriptor]
+        loadData(with: request)
+    }
+    
     func searchNote(for title: String){
         let request : NSFetchRequest<Note> = Note.fetchRequest()
         let predicate = NSPredicate(format: "title CONTAINS[cd] %@", title)
@@ -41,6 +50,5 @@ class NoteViewModel: NoteViewModelProtocol {
         let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
         request.sortDescriptors = [sortDescriptor]
         loadData(with: request)
-        reloadNoteTableView?()
     }
 }

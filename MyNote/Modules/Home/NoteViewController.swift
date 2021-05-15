@@ -48,6 +48,7 @@ class NoteViewController: UIViewController {
         let selectAction = RMAction<UIPickerView>(title: "Select".localized(), style: .done) { (selectedValue) in
             
             self.vcView.categoryLabel.text = self.viewModel.noteCategoryArray?[selectedValue.contentView.selectedRow(inComponent: 0)].name
+            self.viewModel.filterNote(with: self.vcView.categoryLabel.text ?? "")
         }
         
         let cancelAction = RMAction<UIPickerView>(title: "Cancel".localized(), style: .cancel) { (selectedValue) in
