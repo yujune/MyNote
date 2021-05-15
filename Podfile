@@ -7,6 +7,7 @@ target 'MyNote' do
 
   # Pods for MyNote
   pod 'TagListView'
+  pod "RMPickerViewController", "~> 2.3.1"
 
   target 'MyNoteTests' do
     inherit! :search_paths

@@ -1,16 +1,24 @@
 PODS:
+  - RMActionController (1.3.1)
+  - RMPickerViewController (2.3.1):
+    - RMActionController (~> 1.3.1)
   - TagListView (1.4.1)
 
 DEPENDENCIES:
+  - RMPickerViewController (~> 2.3.1)
   - TagListView
 
 SPEC REPOS:
   trunk:
+    - RMActionController
+    - RMPickerViewController
     - TagListView
 
 SPEC CHECKSUMS:
+  RMActionController: 535715be9f3d9eb96a838485370dcccee0dda597
+  RMPickerViewController: 4398994985b34d92f3f3e12f535ac0199f2937d4
   TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
 
-PODFILE CHECKSUM: dae86ae2a0a1ac95954cc8de7acd7e8494f2abfd
+PODFILE CHECKSUM: 55bc5306131f3a58367eb571fec1c351174812f6
 
 COCOAPODS: 1.10.1
