@@ -34,7 +34,9 @@ class NoteTableViewCell: UITableViewCell {
     private func setUpNoteTagListView(_ note: Note) {
         var tagIndex = 0
         noteTagListView.removeAllTags()
-    
+        guard note.parentCategory?.name != CategoryName.all.rawValue else {
+            return
+        }
         noteTagListView.addTag(note.parentCategory?.name ?? "")
         noteTagListView.tagViews[tagIndex].tagBackgroundColor = getCategoryUIColor(from: note.parentCategory?.color ?? "")
         noteTagListView.textColor = UIColor.black

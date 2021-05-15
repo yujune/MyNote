@@ -8,9 +8,9 @@
 import UIKit
 
 enum CategoryName: String {
+    case all = "All"
     case personal = "Personal"
     case finance = "Finance"
-    case other = "Other"
 }
 
 enum CategoryColor: String {

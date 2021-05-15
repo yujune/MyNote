@@ -31,9 +31,6 @@ struct CategoryModel {
         case CategoryName.finance.rawValue:
             categoryColor = .red
             break
-        case CategoryName.other.rawValue:
-            categoryColor = .gray
-            break
         default:
             categoryColor = .gray
             break
