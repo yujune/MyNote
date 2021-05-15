@@ -23,6 +23,10 @@ extension Date {
     }
 }
 
+extension Notification.Name {
+    static let refreshNotes = Notification.Name("refreshNotes")
+}
+
 extension UIView {
     @discardableResult
     func fromNib<T : UIView>() -> T? {

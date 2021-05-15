@@ -12,8 +12,18 @@ import CoreData
 class NoteDetailsViewModel: NoteDetailsViewModelProtocol {
     var showErrorMessage: ((String) -> Void)?
     var showInfoMessage: ((String) -> Void)?
+    var noteCategoryArray: [Category]?
     var selectedCategory: Category?
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    func loadCategoryData(){
+        let request: NSFetchRequest<Category> = Category.fetchRequest()
+        do {
+            try noteCategoryArray = context.fetch(request)
+        }catch {
+            print("Error fetching data from context \(error)")
+        }
+    }
     
     func getSelectedCategory(name: String) -> Category? {
         let request : NSFetchRequest<Category> = Category.fetchRequest()
@@ -43,6 +53,7 @@ class NoteDetailsViewModel: NoteDetailsViewModelProtocol {
         
         do {
             try context.save()
+            NotificationCenter.default.post(name: .refreshNotes, object: nil)
         }catch {
             print("Error saving context\(error)")
         }

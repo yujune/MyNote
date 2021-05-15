@@ -23,6 +23,8 @@ class NoteViewController: UIViewController {
         setupBindings()
         viewModel.loadData()
         viewModel.loadCategoryData()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(refreshNotesTable), name: .refreshNotes, object: nil)
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
     }
     
@@ -38,6 +40,11 @@ class NoteViewController: UIViewController {
             weakSelf.vcView.noteTableView.reloadData()
         }
         vcView.categoryButton.addTarget(self, action: #selector(pickerButtonPressed), for: .touchUpInside)
+    }
+    
+    @objc func refreshNotesTable() {
+        viewModel.loadData()
+        vcView.noteTableView.reloadData()
     }
     
     @objc func pickerButtonPressed(){
