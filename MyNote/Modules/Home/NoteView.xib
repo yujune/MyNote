@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoteView" customModule="MyNote" customModuleProvider="target">
             <connections>
-                <outlet property="categoryButton" destination="Fqm-BM-slb" id="uvk-L6-9N7"/>
+                <outlet property="categoryButton" destination="634-fT-Mrt" id="pDZ-9E-eV3"/>
                 <outlet property="categoryLabel" destination="SN8-Hh-lV6" id="JZH-Jb-wzv"/>
                 <outlet property="noteTableView" destination="cYb-7d-EbX" id="FHg-Tr-e0m"/>
                 <outlet property="notesCountLabel" destination="4Sb-UB-y6F" id="Boh-T4-TSa"/>
@@ -38,28 +38,26 @@
                                                 <constraint firstAttribute="height" constant="15" id="xGg-Ff-Brg"/>
                                             </constraints>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqm-BM-slb">
-                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
-                                            <state key="normal" title="Button"/>
-                                        </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SN8-Hh-lV6">
                                             <rect key="frame" x="0.0" y="-0.5" width="125" height="31.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="634-fT-Mrt">
+                                            <rect key="frame" x="0.0" y="0.0" width="135" height="30"/>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstItem="Fqm-BM-slb" firstAttribute="top" secondItem="oMW-nS-Ige" secondAttribute="top" id="8Mz-R1-awG"/>
+                                        <constraint firstItem="634-fT-Mrt" firstAttribute="leading" secondItem="oMW-nS-Ige" secondAttribute="leading" id="94X-Nu-Jrs"/>
+                                        <constraint firstAttribute="bottom" secondItem="634-fT-Mrt" secondAttribute="bottom" id="F0K-g9-2Zu"/>
                                         <constraint firstItem="SN8-Hh-lV6" firstAttribute="centerY" secondItem="oMW-nS-Ige" secondAttribute="centerY" id="H24-G2-BJK"/>
                                         <constraint firstAttribute="width" constant="150" id="IDF-AY-Ilf"/>
-                                        <constraint firstItem="Fqm-BM-slb" firstAttribute="centerY" secondItem="oMW-nS-Ige" secondAttribute="centerY" id="Kp9-ZK-Jrp"/>
-                                        <constraint firstAttribute="leading" secondItem="Fqm-BM-slb" secondAttribute="trailing" id="OTb-2Q-ood"/>
-                                        <constraint firstAttribute="bottom" secondItem="Fqm-BM-slb" secondAttribute="bottom" id="Oy9-XC-oQG"/>
+                                        <constraint firstItem="634-fT-Mrt" firstAttribute="top" secondItem="oMW-nS-Ige" secondAttribute="top" id="Keb-3F-Mdh"/>
+                                        <constraint firstItem="IpV-KL-4E0" firstAttribute="leading" secondItem="634-fT-Mrt" secondAttribute="trailing" id="UZf-BV-XKn"/>
                                         <constraint firstAttribute="trailing" secondItem="IpV-KL-4E0" secondAttribute="trailing" id="aAk-Ie-jen"/>
                                         <constraint firstItem="IpV-KL-4E0" firstAttribute="centerY" secondItem="oMW-nS-Ige" secondAttribute="centerY" id="dlx-JJ-hBT"/>
-                                        <constraint firstItem="Fqm-BM-slb" firstAttribute="leading" secondItem="oMW-nS-Ige" secondAttribute="leading" id="eU2-nR-VF0"/>
                                         <constraint firstItem="SN8-Hh-lV6" firstAttribute="leading" secondItem="oMW-nS-Ige" secondAttribute="leading" id="rC2-4s-5HD"/>
                                         <constraint firstItem="IpV-KL-4E0" firstAttribute="leading" secondItem="SN8-Hh-lV6" secondAttribute="trailing" constant="10" id="xBA-51-JYb"/>
                                     </constraints>

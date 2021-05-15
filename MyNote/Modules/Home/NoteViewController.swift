@@ -7,6 +7,7 @@
 
 
 import UIKit
+import RMPickerViewController
 
 class NoteViewController: UIViewController {
     
@@ -21,6 +22,7 @@ class NoteViewController: UIViewController {
         super.viewDidLoad()
         setupBindings()
         viewModel.loadData()
+        viewModel.loadCategoryData()
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
     }
     
@@ -35,6 +37,28 @@ class NoteViewController: UIViewController {
             }
             weakSelf.vcView.noteTableView.reloadData()
         }
+        vcView.categoryButton.addTarget(self, action: #selector(pickerButtonPressed), for: .touchUpInside)
+    }
+    
+    @objc func pickerButtonPressed(){
+        pickerView("Choose category".localized())
+    }
+    
+    private func pickerView(_ title: String){
+        let selectAction = RMAction<UIPickerView>(title: "Select".localized(), style: .done) { (selectedValue) in
+            
+            self.vcView.categoryLabel.text = self.viewModel.noteCategoryArray?[selectedValue.contentView.selectedRow(inComponent: 0)].name
+        }
+        
+        let cancelAction = RMAction<UIPickerView>(title: "Cancel".localized(), style: .cancel) { (selectedValue) in
+        }
+        
+        let pickerController = RMPickerViewController(style: .default, title: title, message: nil, select: selectAction, andCancel: cancelAction)!
+        
+        pickerController.picker.dataSource = self
+        pickerController.picker.delegate = self
+        
+        self.present(pickerController, animated: true, completion: nil)
     }
 }
 
@@ -83,4 +107,35 @@ extension NoteViewController: UISearchBarDelegate {
             }
         }
     }
+}
+
+//MARK: - Picker View
+extension NoteViewController: UIPickerViewDataSource   {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return viewModel.noteCategoryArray?.count ?? 0
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        let label: UILabel
+        
+        if let view = view {
+            label = view as! UILabel
+        }
+        else {
+            label = UILabel(frame: CGRect(x: 0, y: 0, width: pickerView.frame.width, height: 400))
+        }
+        
+        let title = viewModel.noteCategoryArray?[row].name
+        label.text = title
+        label.textAlignment = .center
+        return label
+    }
+}
+
+extension NoteViewController: UIPickerViewDelegate {
+    
 }
