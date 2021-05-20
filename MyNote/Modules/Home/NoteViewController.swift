@@ -23,6 +23,7 @@ class NoteViewController: UIViewController {
         setupBindings()
         viewModel.loadData()
         viewModel.loadCategoryData()
+        vcView.categoryLabel.text = viewModel.noteCategoryArray?[0].name;
         
         NotificationCenter.default.addObserver(self, selector: #selector(refreshNotesTable), name: .refreshNotes, object: nil)
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
@@ -104,9 +105,14 @@ extension NoteViewController: UISearchBarDelegate {
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         if searchBar.text?.isEmpty ?? true {
-            viewModel.loadData()
+            if vcView.categoryLabel.text == CategoryName.all.rawValue {
+                viewModel.loadData()
+            }else {
+                viewModel.filterNote(with: vcView.categoryLabel.text ?? "")
+            }
+            
         }else {
-            viewModel.searchNote(for: searchBar.text ?? "")
+            viewModel.searchNote(for: searchBar.text ?? "", in: vcView.categoryLabel.text ?? "")
         }
     }
     

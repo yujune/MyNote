@@ -42,10 +42,21 @@ class NoteViewModel: NoteViewModelProtocol {
         loadData(with: request)
     }
     
-    func searchNote(for title: String){
+    func searchNote(for title: String, in category: String){
         let request : NSFetchRequest<Note> = Note.fetchRequest()
+        
+        var categoryPredicate: NSPredicate?
+        if category != CategoryName.all.rawValue {
+            categoryPredicate = NSPredicate(format: "parentCategory.name MATCHES %@", category)
+        }
+        
         let predicate = NSPredicate(format: "title CONTAINS[cd] %@", title)
-        request.predicate = predicate
+        
+        if let categoryPredicatee = categoryPredicate {
+            request.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [categoryPredicatee, predicate])
+        }else {
+            request.predicate = predicate
+        }
         
         let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
         request.sortDescriptors = [sortDescriptor]
