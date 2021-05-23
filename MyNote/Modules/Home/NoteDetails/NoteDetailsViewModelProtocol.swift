@@ -13,5 +13,4 @@ protocol NoteDetailsViewModelProtocol: Messageable {
 }
 
 protocol NoteDetailsViewModelProtocolDelegate: class {
-    
 }

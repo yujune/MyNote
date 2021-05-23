@@ -9,6 +9,7 @@ import UIKit
 import CoreData
 
 class NoteViewModel: NoteViewModelProtocol {
+    weak var delegate: NoteViewModelProtocolDelegate?
     var showErrorMessage: ((String) -> Void)?
     var showInfoMessage: ((String) -> Void)?
     var reloadNoteTableView: (() -> Void)?

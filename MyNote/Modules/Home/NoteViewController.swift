@@ -98,6 +98,10 @@ extension NoteViewController: UITableViewDataSource {
 
 //MARK: - UITableViewDelegate
 extension NoteViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedNote = viewModel.noteArray?[indexPath.row] ?? Note()
+        viewModel.delegate?.navigateToNoteDetails(note: selectedNote, isCreateNote: false)
+    }
 }
 
 //MARK: - Search Bar

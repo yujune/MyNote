@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BaseCoordinator: Coordinator {
+class BaseCoordinator: NSObject, Coordinator {
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
     
@@ -25,15 +25,17 @@ class BaseCoordinator: Coordinator {
         childCoordinators.append(coordinator)
     }
     
-    func navigateToNoteDetails(){
+    func navigateToNoteDetails(note: Note?, isCreateNote: Bool){
         let vc = NoteDetailsViewController()
         vc.viewModel = NoteDetailsViewModel()
+        vc.viewModel.note = note
+        vc.viewModel.isCreateNote = isCreateNote
         navigationController.pushViewController(vc, animated: true)
     }
 }
 
 extension BaseCoordinator: BarButtonItemProtocol {
     func addBarButtonPressed() {
-        navigateToNoteDetails()
+        navigateToNoteDetails(note: nil, isCreateNote: true)
     }
 }

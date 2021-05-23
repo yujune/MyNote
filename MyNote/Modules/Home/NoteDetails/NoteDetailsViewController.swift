@@ -22,10 +22,16 @@ class NoteDetailsViewController: UIViewController {
         super.viewDidLoad()
         setupBindings()
         viewModel.loadCategoryData()
+        vcView.updateDisplay(note: viewModel.note ?? nil)
     }
     
     func setupBindings() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveBarButtonPressed))
+        if (viewModel.isCreateNote ?? true) {
+            navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveBarButtonPressed))
+        }else {
+            navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(updateBarButtonPressed))
+        }
+       
         vcView.categoryButton.addTarget(self, action: #selector(filterButtonPressed), for: .touchUpInside)
     }
     
@@ -41,6 +47,10 @@ class NoteDetailsViewController: UIViewController {
         viewModel.saveData(newNote: newNote)
         self.navigationController?.popViewController(animated: true)
         //self.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func updateBarButtonPressed(){
+        print("Update feature will be supported soon")
     }
     
     private func pickerView(_ title: String){

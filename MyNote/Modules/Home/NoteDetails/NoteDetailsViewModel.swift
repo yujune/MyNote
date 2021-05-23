@@ -10,6 +10,8 @@ import UIKit
 import CoreData
 
 class NoteDetailsViewModel: NoteDetailsViewModelProtocol {
+    var note: Note?
+    var isCreateNote: Bool?
     var showErrorMessage: ((String) -> Void)?
     var showInfoMessage: ((String) -> Void)?
     var noteCategoryArray: [Category]?

@@ -13,5 +13,5 @@ protocol NoteViewModelProtocol: Messageable {
 }
 
 protocol NoteViewModelProtocolDelegate: class {
-    
+    func navigateToNoteDetails(note: Note?, isCreateNote: Bool)
 }

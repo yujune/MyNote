@@ -29,4 +29,14 @@ class NoteDetailsView: UIView {
     func customInit() {
         self.fromNib()
     }
+    
+    func updateDisplay(note: Note?){
+        guard let validNote = note else {
+            //create note will return out from this funtion.
+            return
+        }
+        title.text = validNote.title
+        createdDate.text = validNote.createdDate
+        categoryLabel.text = validNote.parentCategory?.name ?? "no category"
+    }
 }
