@@ -16,6 +16,7 @@ class NoteDetailsViewModel: NoteDetailsViewModelProtocol {
     var showInfoMessage: ((String) -> Void)?
     var noteCategoryArray: [Category]?
     var selectedCategory: Category?
+    var hasContentEdited = false
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     func loadCategoryData(){

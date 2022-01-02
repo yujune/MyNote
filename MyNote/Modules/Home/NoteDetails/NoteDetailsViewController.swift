@@ -33,6 +33,7 @@ class NoteDetailsViewController: UIViewController {
         }
        
         vcView.title.delegate = self
+        vcView.noteDetailsTextView.delegate = self
         vcView.categoryButton.addTarget(self, action: #selector(filterButtonPressed), for: .touchUpInside)
     }
     
@@ -126,4 +127,15 @@ extension NoteDetailsViewController: UIPickerViewDelegate {
 
 //MARK: - UITextViewDelegate
 extension NoteDetailsViewController: UITextFieldDelegate {
+    
+}
+
+//MARK: - UITextViewDelegate
+extension NoteDetailsViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if (textView.text == "Write something..." && !viewModel.hasContentEdited) {
+            textView.text = ""
+            viewModel.hasContentEdited = true
+        }
+    }
 }
