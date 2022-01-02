@@ -23,8 +23,11 @@ class NoteViewController: UIViewController {
         setupBindings()
         viewModel.loadData()
         viewModel.loadCategoryData()
-        vcView.categoryLabel.text = viewModel.noteCategoryArray?[0].name;
-        
+        if viewModel.hasAnyCategory() {
+            vcView.categoryLabel.text = viewModel.noteCategoryArray?[0].name;
+        } else {
+            vcView.categoryLabel.text = "No Category"
+        }
         NotificationCenter.default.addObserver(self, selector: #selector(refreshNotesTable), name: .refreshNotes, object: nil)
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
     }
@@ -38,6 +41,7 @@ class NoteViewController: UIViewController {
             guard let weakSelf = self else{
                 return
             }
+            weakSelf.vcView.notesCountLabel.text = "\(weakSelf.viewModel.noteArray?.count ?? 0) notes"
             weakSelf.vcView.noteTableView.reloadData()
         }
         vcView.categoryButton.addTarget(self, action: #selector(pickerButtonPressed), for: .touchUpInside)
@@ -45,11 +49,16 @@ class NoteViewController: UIViewController {
     
     @objc func refreshNotesTable() {
         viewModel.loadData()
-        vcView.noteTableView.reloadData()
     }
     
     @objc func pickerButtonPressed(){
-        pickerView("Choose category".localized())
+        if viewModel.hasAnyCategory(){
+            pickerView("Choose category".localized())
+        }else{
+            //viewModel.showErrorMessage("No Category from your database")
+            print("No Category from your database")
+        }
+        
     }
     
     private func pickerView(_ title: String){
@@ -83,7 +92,13 @@ class NoteViewController: UIViewController {
 //MARK: - UITableViewDataSource
 extension NoteViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.noteArray?.count ?? 0
+        let noteArrayCount = viewModel.noteArray?.count ?? 0
+        if noteArrayCount == 0 {
+            self.vcView.noteTableView.setEmptyMessage("Empty")
+        } else {
+            self.vcView.noteTableView.restore()
+        }
+        return noteArrayCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

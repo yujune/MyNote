@@ -63,4 +63,12 @@ class NoteViewModel: NoteViewModelProtocol {
         request.sortDescriptors = [sortDescriptor]
         loadData(with: request)
     }
+    
+    func hasAnyCategory() -> Bool {
+        if let categoryArray = noteCategoryArray {
+            return !categoryArray.isEmpty
+        }else{
+            return false
+        }
+    }
 }

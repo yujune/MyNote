@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -29,23 +30,23 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oMW-nS-Ige">
-                                    <rect key="frame" x="15" y="15" width="150" height="30"/>
+                                    <rect key="frame" x="15" y="15" width="345" height="30"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DropDownArrow" translatesAutoresizingMaskIntoConstraints="NO" id="IpV-KL-4E0">
-                                            <rect key="frame" x="135" y="7.5" width="15" height="15"/>
+                                            <rect key="frame" x="106" y="7.5" width="15" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="15" id="Wie-g4-Jge"/>
                                                 <constraint firstAttribute="height" constant="15" id="xGg-Ff-Brg"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SN8-Hh-lV6">
-                                            <rect key="frame" x="0.0" y="-0.5" width="125" height="31.5"/>
+                                            <rect key="frame" x="0.0" y="-0.5" width="96" height="31.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="634-fT-Mrt">
-                                            <rect key="frame" x="0.0" y="0.0" width="135" height="30"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="106" height="30"/>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -53,10 +54,9 @@
                                         <constraint firstItem="634-fT-Mrt" firstAttribute="leading" secondItem="oMW-nS-Ige" secondAttribute="leading" id="94X-Nu-Jrs"/>
                                         <constraint firstAttribute="bottom" secondItem="634-fT-Mrt" secondAttribute="bottom" id="F0K-g9-2Zu"/>
                                         <constraint firstItem="SN8-Hh-lV6" firstAttribute="centerY" secondItem="oMW-nS-Ige" secondAttribute="centerY" id="H24-G2-BJK"/>
-                                        <constraint firstAttribute="width" constant="150" id="IDF-AY-Ilf"/>
                                         <constraint firstItem="634-fT-Mrt" firstAttribute="top" secondItem="oMW-nS-Ige" secondAttribute="top" id="Keb-3F-Mdh"/>
                                         <constraint firstItem="IpV-KL-4E0" firstAttribute="leading" secondItem="634-fT-Mrt" secondAttribute="trailing" id="UZf-BV-XKn"/>
-                                        <constraint firstAttribute="trailing" secondItem="IpV-KL-4E0" secondAttribute="trailing" id="aAk-Ie-jen"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IpV-KL-4E0" secondAttribute="trailing" id="aAk-Ie-jen"/>
                                         <constraint firstItem="IpV-KL-4E0" firstAttribute="centerY" secondItem="oMW-nS-Ige" secondAttribute="centerY" id="dlx-JJ-hBT"/>
                                         <constraint firstItem="SN8-Hh-lV6" firstAttribute="leading" secondItem="oMW-nS-Ige" secondAttribute="leading" id="rC2-4s-5HD"/>
                                         <constraint firstItem="IpV-KL-4E0" firstAttribute="leading" secondItem="SN8-Hh-lV6" secondAttribute="trailing" constant="10" id="xBA-51-JYb"/>
@@ -76,6 +76,7 @@
                                 <constraint firstAttribute="trailing" secondItem="4Sb-UB-y6F" secondAttribute="trailing" id="LMN-tf-kRI"/>
                                 <constraint firstItem="4Sb-UB-y6F" firstAttribute="top" secondItem="SN8-Hh-lV6" secondAttribute="bottom" constant="10" id="PaP-iy-45e"/>
                                 <constraint firstItem="4Sb-UB-y6F" firstAttribute="leading" secondItem="oMW-nS-Ige" secondAttribute="leading" id="Phd-fN-SGe"/>
+                                <constraint firstAttribute="trailing" secondItem="oMW-nS-Ige" secondAttribute="trailing" constant="15" id="mpy-lb-yBH"/>
                                 <constraint firstAttribute="bottom" secondItem="4Sb-UB-y6F" secondAttribute="bottom" constant="10" id="yiW-Kd-XBz"/>
                             </constraints>
                         </view>
