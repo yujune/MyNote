@@ -47,7 +47,7 @@ class NoteDetailsViewModel: NoteDetailsViewModelProtocol {
         }
         
         let newNote = Note(context: context)
-        newNote.title = note.title
+        newNote.title = note.title ?? "Untitled"
         newNote.isFavourite = note.isFavourite ?? false
         newNote.createdDate = note.createdDate
         newNote.detailsText = note.detailsText

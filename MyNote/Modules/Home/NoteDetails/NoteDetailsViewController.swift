@@ -32,6 +32,7 @@ class NoteDetailsViewController: UIViewController {
             navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(updateBarButtonPressed))
         }
        
+        vcView.title.delegate = self
         vcView.categoryButton.addTarget(self, action: #selector(filterButtonPressed), for: .touchUpInside)
     }
     
@@ -123,3 +124,6 @@ extension NoteDetailsViewController: UIPickerViewDelegate {
     
 }
 
+//MARK: - UITextViewDelegate
+extension NoteDetailsViewController: UITextFieldDelegate {
+}
