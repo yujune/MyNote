@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 struct NoteModel {
     var title: String?
@@ -13,6 +14,8 @@ struct NoteModel {
     var isFavourite: Bool?
     var detailsText: String?
     var category: CategoryModel?
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 }
 
 struct CategoryModel {
@@ -21,7 +24,9 @@ struct CategoryModel {
         return getCategoryColor()
     }
     
-    func getCategoryColor() -> String{
+    static let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    func getCategoryColor() -> String {
         var categoryColor: CategoryColor
         
         switch name {
@@ -36,5 +41,32 @@ struct CategoryModel {
             break
         }
         return categoryColor.rawValue
+    }
+    
+    static func isCategoryEmpty() -> Bool {
+        return self.loadCategoryData().isEmpty
+    }
+    
+    static func loadCategoryData(request: NSFetchRequest<Category> = Category.fetchRequest()) -> [Category] {
+        var noteCategoryArray: [Category] = []
+        do {
+            noteCategoryArray = try context.fetch(request)
+        } catch {
+            print("Error fetching data from context \(error)")
+        }
+        return noteCategoryArray
+    }
+    
+    static func save(with categories: [CategoryModel]) {
+        for category in categories {
+            let newCategory = NSEntityDescription.insertNewObject(forEntityName: "Category", into: context)
+            newCategory.setValue(category.name, forKey: "name")
+        }
+        
+        do {
+            try context.save()
+        } catch {
+            print("Error saving: \(error)")
+        }
     }
 }
