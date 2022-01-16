@@ -61,6 +61,7 @@ struct CategoryModel {
         for category in categories {
             let newCategory = NSEntityDescription.insertNewObject(forEntityName: "Category", into: context)
             newCategory.setValue(category.name, forKey: "name")
+            newCategory.setValue(category.color, forKey: "color")
         }
         
         do {
