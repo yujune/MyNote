@@ -13,6 +13,7 @@ class NoteViewController: UIViewController {
     
     var viewModel: NoteViewModel!
     private var vcView : NoteView { return view as! NoteView }
+    let refreshControl = UIRefreshControl()
     
     override func loadView() {
         view = NoteView()
@@ -35,6 +36,8 @@ class NoteViewController: UIViewController {
     func setupBindings() {
         vcView.noteTableView.delegate = self
         vcView.noteTableView.dataSource = self
+        refreshControl.addTarget(self, action: #selector(refreshNotesTable), for: .valueChanged)
+        vcView.noteTableView.addSubview(self.refreshControl)
         vcView.searchBar.delegate = self
         vcView.noteTableView.tableFooterView = UIView()
         viewModel.reloadNoteTableView = { [weak self] in
@@ -49,6 +52,7 @@ class NoteViewController: UIViewController {
     
     @objc func refreshNotesTable() {
         viewModel.loadData()
+        refreshControl.endRefreshing()
     }
     
     @objc func pickerButtonPressed(){
