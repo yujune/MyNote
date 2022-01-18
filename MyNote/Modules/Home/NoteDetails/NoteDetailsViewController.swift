@@ -29,7 +29,7 @@ class NoteDetailsViewController: UIViewController {
         if (viewModel.isCreateNote ?? true) {
             navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveBarButtonPressed))
         }else {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(updateBarButtonPressed))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(updateBarButtonPressed))
         }
        
         vcView.title.delegate = self
