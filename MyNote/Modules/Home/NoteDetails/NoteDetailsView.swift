@@ -38,5 +38,6 @@ class NoteDetailsView: UIView {
         title.text = validNote.title
         createdDate.text = validNote.createdDate
         categoryLabel.text = validNote.parentCategory?.name ?? "no category"
+        noteDetailsTextView.text = validNote.detailsText
     }
 }
