@@ -119,3 +119,25 @@ extension UITableView {
         self.separatorStyle = .singleLine
     }
 }
+
+//MARK: - UICollectionView
+extension UICollectionView {
+    func registerCell(with cell: UICollectionViewCell.Type) {
+        self.register(UINib(nibName: String(describing: cell), bundle: nil), forCellWithReuseIdentifier: String(describing: cell))
+    }
+}
+
+extension UICollectionViewCell {
+    static var identifier: String {
+        return String(describing: self)
+    }
+}
+
+//MARK: - Image
+extension UIImageView {
+    func setImageColor(color: UIColor) {
+        let templateImage = self.image?.withRenderingMode(.alwaysTemplate)
+        self.image = templateImage
+        self.tintColor = color
+    }
+}
