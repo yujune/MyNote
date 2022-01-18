@@ -21,6 +21,7 @@ class NoteDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBindings()
+        setupCollectionView()
         viewModel.loadCategoryData()
         vcView.updateDisplay(note: viewModel.note ?? nil)
     }
@@ -35,6 +36,21 @@ class NoteDetailsViewController: UIViewController {
         vcView.title.delegate = self
         vcView.noteDetailsTextView.delegate = self
         vcView.categoryButton.addTarget(self, action: #selector(filterButtonPressed), for: .touchUpInside)
+        
+        viewModel.reloadBottomCollectionTableViewClosure = { [weak self] in
+            DispatchQueue.main.async {
+                guard let weakSelf = self else {
+                    return
+                }
+                weakSelf.vcView.bottomCollectionView.reloadData()
+            }
+        }
+    }
+    
+    func setupCollectionView() {
+        vcView.bottomCollectionView.delegate = self
+        vcView.bottomCollectionView.dataSource = self
+        viewModel.setupBottomCollectionViewData()
     }
     
     @objc func filterButtonPressed(){
@@ -91,6 +107,39 @@ extension NoteDetailsViewController: UITableViewDataSource {
 
 //MARK: - UITableViewDelegate
 extension NoteDetailsViewController: UITableViewDelegate {
+}
+
+//MARK: - UICollectionViewDataSource
+extension NoteDetailsViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel.bottomButtonArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return dequeueButtonCollectionViewCell(collectionView, cellForItemAt: indexPath)
+    }
+    
+    func dequeueButtonCollectionViewCell(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ButtonCollectionViewCell.identifier, for: indexPath) as? ButtonCollectionViewCell else {
+            fatalError()
+        }
+        cell.updateDisplay(model: viewModel.bottomButtonArray[indexPath.row])
+        return cell
+    }
+}
+
+//MARK: - UICollectionViewDelegate
+extension NoteDetailsViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
+}
+
+//MARK: - UICollectionViewFlowLayout
+extension NoteDetailsViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: Int(collectionView.frame.width) / viewModel.bottomButtonArray.count, height: Int(collectionView.frame.height))
+    }
 }
 
 //MARK: - Picker View

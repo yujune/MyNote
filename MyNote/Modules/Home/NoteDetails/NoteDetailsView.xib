@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoteDetailsView" customModule="MyNote" customModuleProvider="target">
             <connections>
+                <outlet property="bottomCollectionView" destination="vEx-Xq-KzJ" id="rhq-Vz-sAj"/>
                 <outlet property="categoryButton" destination="yZO-Qu-aK7" id="cWx-dA-lmN"/>
                 <outlet property="categoryLabel" destination="QDp-hM-7Vm" id="LIa-s9-VLe"/>
                 <outlet property="createdDate" destination="wIg-7P-gsn" id="aCy-w3-gHT"/>
@@ -75,26 +76,42 @@
                     </subviews>
                 </stackView>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Write something..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vox-0u-PVP">
-                    <rect key="frame" x="15" y="106.5" width="345" height="550.5"/>
+                    <rect key="frame" x="15" y="106.5" width="345" height="470.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                 </textView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vEx-Xq-KzJ">
+                    <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="icJ-q8-Yjo"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NPE-g2-MtV">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Sn1-O9-GGg" firstAttribute="trailing" secondItem="4xs-9I-3nN" secondAttribute="trailing" id="1kt-yz-kAw"/>
                 <constraint firstItem="Sn1-O9-GGg" firstAttribute="top" secondItem="4xs-9I-3nN" secondAttribute="bottom" constant="10" id="4II-2I-X1Y"/>
+                <constraint firstItem="vEx-Xq-KzJ" firstAttribute="top" secondItem="vox-0u-PVP" secondAttribute="bottom" constant="10" id="6Wg-qu-IDW"/>
                 <constraint firstItem="Sn1-O9-GGg" firstAttribute="leading" secondItem="4xs-9I-3nN" secondAttribute="leading" id="XqM-33-iC1"/>
                 <constraint firstItem="4xs-9I-3nN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="doc-79-5N7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vEx-Xq-KzJ" secondAttribute="trailing" id="e54-l8-ptd"/>
+                <constraint firstItem="vEx-Xq-KzJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="kig-ym-ftR"/>
                 <constraint firstItem="vox-0u-PVP" firstAttribute="leading" secondItem="4xs-9I-3nN" secondAttribute="leading" id="l11-uO-kgs"/>
                 <constraint firstItem="vox-0u-PVP" firstAttribute="trailing" secondItem="4xs-9I-3nN" secondAttribute="trailing" id="laI-WM-mgR"/>
                 <constraint firstItem="4xs-9I-3nN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="p82-fi-ySI"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="vox-0u-PVP" secondAttribute="bottom" constant="10" id="qUd-jz-AUj"/>
                 <constraint firstItem="vox-0u-PVP" firstAttribute="top" secondItem="Sn1-O9-GGg" secondAttribute="bottom" id="sPD-pj-Izr"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4xs-9I-3nN" secondAttribute="trailing" constant="15" id="sqQ-JI-G1h"/>
+                <constraint firstItem="vEx-Xq-KzJ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="zA5-mh-mHb"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="-156"/>
         </view>

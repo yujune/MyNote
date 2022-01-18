@@ -15,6 +15,17 @@ class NoteDetailsView: UIView {
     @IBOutlet weak var categoryButton: UIButton!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var noteDetailsTextView: UITextView!
+    @IBOutlet var bottomCollectionView: UICollectionView! {
+        didSet {
+            bottomCollectionView.registerCell(with: ButtonCollectionViewCell.self)
+            if let layout = bottomCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+                layout.scrollDirection = .horizontal
+                layout.minimumInteritemSpacing = 0
+                layout.minimumLineSpacing = 0
+            }
+            bottomCollectionView.isScrollEnabled = false
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)

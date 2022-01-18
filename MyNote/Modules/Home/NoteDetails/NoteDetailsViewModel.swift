@@ -17,7 +17,21 @@ class NoteDetailsViewModel: NoteDetailsViewModelProtocol {
     var noteCategoryArray: [Category]?
     var selectedCategory: Category?
     var hasContentEdited = false
+    var reloadBottomCollectionTableViewClosure: (()->())?
+    var bottomButtonArray: [DisplayModel] = [DisplayModel]() {
+        didSet {
+            reloadBottomCollectionTableViewClosure?()
+        }
+    }
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    func setupBottomCollectionViewData() {
+        let shareButton = DisplayModel(title: "Share", image: UIImage(systemName: "paperplane"))
+        let starButton = DisplayModel(title: "Favourite", image: UIImage(systemName: "star"))
+        let deleteButton = DisplayModel(title: "Delete", image: UIImage(systemName: "trash"))
+        let moreButton = DisplayModel(title: "More", image: UIImage(named: "more"))
+        bottomButtonArray = [shareButton, starButton, deleteButton, moreButton]
+    }
     
     func loadCategoryData(){
         let request: NSFetchRequest<Category> = Category.fetchRequest()
