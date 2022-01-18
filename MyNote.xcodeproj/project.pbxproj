@@ -24,6 +24,9 @@
 		B570D006264E1DE600B1BBAA /* NoteDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570D001264E1DE600B1BBAA /* NoteDetailsView.swift */; };
 		B570D007264E1DE600B1BBAA /* NoteDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570D002264E1DE600B1BBAA /* NoteDetailsViewModel.swift */; };
 		B570D008264E1DE600B1BBAA /* NoteDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B570D003264E1DE600B1BBAA /* NoteDetailsView.xib */; };
+		B57A64CF279652C000BEC149 /* ButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A64CD279652C000BEC149 /* ButtonCollectionViewCell.swift */; };
+		B57A64D0279652C000BEC149 /* ButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57A64CE279652C000BEC149 /* ButtonCollectionViewCell.xib */; };
+		B57A64D3279658BB00BEC149 /* DisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A64D2279658BB00BEC149 /* DisplayModel.swift */; };
 		B5EADA35264CCB1C0098DE7E /* NoteViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EADA30264CCB1C0098DE7E /* NoteViewModelProtocol.swift */; };
 		B5EADA36264CCB1C0098DE7E /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EADA31264CCB1C0098DE7E /* NoteViewController.swift */; };
 		B5EADA37264CCB1C0098DE7E /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EADA32264CCB1C0098DE7E /* NoteView.swift */; };
@@ -94,6 +97,9 @@
 		B570D001264E1DE600B1BBAA /* NoteDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsView.swift; sourceTree = "<group>"; };
 		B570D002264E1DE600B1BBAA /* NoteDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsViewModel.swift; sourceTree = "<group>"; };
 		B570D003264E1DE600B1BBAA /* NoteDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteDetailsView.xib; sourceTree = "<group>"; };
+		B57A64CD279652C000BEC149 /* ButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		B57A64CE279652C000BEC149 /* ButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCollectionViewCell.xib; sourceTree = "<group>"; };
+		B57A64D2279658BB00BEC149 /* DisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayModel.swift; sourceTree = "<group>"; };
 		B5EADA30264CCB1C0098DE7E /* NoteViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModelProtocol.swift; sourceTree = "<group>"; };
 		B5EADA31264CCB1C0098DE7E /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		B5EADA32264CCB1C0098DE7E /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
@@ -248,6 +254,7 @@
 		B51B1908264C233600D044BD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B57A64D12796587500BEC149 /* DisplayModel */,
 				B5EADAF0264D4FE30098DE7E /* NoteModel.swift */,
 				B570CFD4264E0CEB00B1BBAA /* DataModel.xcdatamodeld */,
 			);
@@ -257,6 +264,7 @@
 		B51B1909264C234500D044BD /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				B57A64D62796624900BEC149 /* Protocols */,
 				B51B1905264C22FF00D044BD /* Extensions */,
 				B5EADA48264CD3990098DE7E /* Messageable.swift */,
 				B5EADAF5264D56390098DE7E /* Constants.swift */,
@@ -282,6 +290,7 @@
 		B570CFFE264E1DC400B1BBAA /* NoteDetails */ = {
 			isa = PBXGroup;
 			children = (
+				B57A64CC2796527400BEC149 /* Cell */,
 				B570CFFF264E1DE600B1BBAA /* NoteDetailsViewModelProtocol.swift */,
 				B570D000264E1DE600B1BBAA /* NoteDetailsViewController.swift */,
 				B570D001264E1DE600B1BBAA /* NoteDetailsView.swift */,
@@ -289,6 +298,30 @@
 				B570D003264E1DE600B1BBAA /* NoteDetailsView.xib */,
 			);
 			path = NoteDetails;
+			sourceTree = "<group>";
+		};
+		B57A64CC2796527400BEC149 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B57A64CD279652C000BEC149 /* ButtonCollectionViewCell.swift */,
+				B57A64CE279652C000BEC149 /* ButtonCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B57A64D12796587500BEC149 /* DisplayModel */ = {
+			isa = PBXGroup;
+			children = (
+				B57A64D2279658BB00BEC149 /* DisplayModel.swift */,
+			);
+			path = DisplayModel;
+			sourceTree = "<group>";
+		};
+		B57A64D62796624900BEC149 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		B5EADA2B264CC42E0098DE7E /* Login */ = {
@@ -459,6 +492,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57A64D0279652C000BEC149 /* ButtonCollectionViewCell.xib in Resources */,
 				B51B18DE264C134600D044BD /* LaunchScreen.storyboard in Resources */,
 				B51B18DB264C134600D044BD /* Assets.xcassets in Resources */,
 				B5EADA39264CCB1C0098DE7E /* NoteView.xib in Resources */,
@@ -597,6 +631,7 @@
 				B5EADA49264CD3990098DE7E /* Messageable.swift in Sources */,
 				B5EADAAE264D2A270098DE7E /* AppCoordinator.swift in Sources */,
 				B5EADAD2264D2CED0098DE7E /* LoginViewModelProtocol.swift in Sources */,
+				B57A64D3279658BB00BEC149 /* DisplayModel.swift in Sources */,
 				B570D004264E1DE600B1BBAA /* NoteDetailsViewModelProtocol.swift in Sources */,
 				B51B190B264C23C200D044BD /* ApiController.swift in Sources */,
 				B5EADAF1264D4FE30098DE7E /* NoteModel.swift in Sources */,
@@ -607,6 +642,7 @@
 				B51B18D2264C134300D044BD /* AppDelegate.swift in Sources */,
 				B5EADAFB264D56470098DE7E /* Enums.swift in Sources */,
 				B570D007264E1DE600B1BBAA /* NoteDetailsViewModel.swift in Sources */,
+				B57A64CF279652C000BEC149 /* ButtonCollectionViewCell.swift in Sources */,
 				B570D005264E1DE600B1BBAA /* NoteDetailsViewController.swift in Sources */,
 				B570D006264E1DE600B1BBAA /* NoteDetailsView.swift in Sources */,
 				B5EADAD5264D2CED0098DE7E /* LoginViewModel.swift in Sources */,
