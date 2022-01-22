@@ -45,6 +45,13 @@ class NoteDetailsViewController: UIViewController {
                 weakSelf.vcView.bottomCollectionView.reloadData()
             }
         }
+        viewModel.deleteNoteClosure = { [weak self] in
+            guard let weakSelf = self else {
+                return
+            }
+            
+            weakSelf.navigationController?.popViewController(animated: true)
+        }
     }
     
     func setupCollectionView() {
@@ -131,7 +138,7 @@ extension NoteDetailsViewController: UICollectionViewDataSource {
 //MARK: - UICollectionViewDelegate
 extension NoteDetailsViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
+        viewModel.handleBottomButtonClick(with: viewModel.bottomButtonArray[indexPath.row])
     }
 }
 

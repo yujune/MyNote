@@ -18,18 +18,19 @@ class NoteDetailsViewModel: NoteDetailsViewModelProtocol {
     var selectedCategory: Category?
     var hasContentEdited = false
     var reloadBottomCollectionTableViewClosure: (()->())?
-    var bottomButtonArray: [DisplayModel] = [DisplayModel]() {
+    var bottomButtonArray: [ButtonDisplayModel] = [ButtonDisplayModel]() {
         didSet {
             reloadBottomCollectionTableViewClosure?()
         }
     }
+    var deleteNoteClosure: (()->())?
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     func setupBottomCollectionViewData() {
-        let shareButton = DisplayModel(title: "Share", image: UIImage(systemName: "paperplane"))
-        let starButton = DisplayModel(title: "Favourite", image: UIImage(systemName: "star"))
-        let deleteButton = DisplayModel(title: "Delete", image: UIImage(systemName: "trash"))
-        let moreButton = DisplayModel(title: "More", image: UIImage(named: "more"))
+        let shareButton = ButtonDisplayModel(title: "Share", image: UIImage(systemName: "paperplane"), buttonType: .share)
+        let starButton = ButtonDisplayModel(title: "Favourite", image: UIImage(systemName: "star"), buttonType: .favourite)
+        let deleteButton = ButtonDisplayModel(title: "Delete", image: UIImage(systemName: "trash"), buttonType: .delete)
+        let moreButton = ButtonDisplayModel(title: "More", image: UIImage(named: "more"), buttonType: .more)
         bottomButtonArray = [shareButton, starButton, deleteButton, moreButton]
     }
     
@@ -74,5 +75,30 @@ class NoteDetailsViewModel: NoteDetailsViewModelProtocol {
         }catch {
             print("Error saving context\(error)")
         }
+    }
+    
+    func handleBottomButtonClick(with model: ButtonDisplayModel) {
+        switch model.buttonType {
+        case .delete:
+            deleteNote()
+            break
+        case .share:
+            break
+        case .favourite:
+            break
+        case .more:
+            break
+        default:
+            break
+        }
+    }
+    
+    func deleteNote() {
+        guard let note = note else {
+            return
+        }
+        NoteModel.delete(with: note)
+        NotificationCenter.default.post(name: .refreshNotes, object: nil)
+        deleteNoteClosure?()
     }
 }

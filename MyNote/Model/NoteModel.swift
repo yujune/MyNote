@@ -15,7 +15,23 @@ struct NoteModel {
     var detailsText: String?
     var category: CategoryModel?
     
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    static let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    static func delete(with note: Note) {        
+        do {
+            let result = try context.existingObject(with: note.objectID)
+            context.delete(result)
+            
+        } catch {
+            print("Error fetching data from context \(error)")
+        }
+        
+        do {
+            try context.save()
+        } catch {
+            print("Error saving data from context \(error)")
+        }
+    }
 }
 
 struct CategoryModel {
