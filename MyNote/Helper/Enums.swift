@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum ButtonType {
+    case delete
+    case more
+    case favourite
+    case share
+}
