@@ -71,11 +71,15 @@ class NoteDetailsViewController: UIViewController {
         
         viewModel.saveData(newNote: newNote)
         self.navigationController?.popViewController(animated: true)
-        //self.dismiss(animated: true, completion: nil)
     }
     
-    @objc func updateBarButtonPressed(){
-        print("Update feature will be supported soon")
+    @objc func updateBarButtonPressed() {
+        let editedNoteCategory = CategoryModel(name: vcView.categoryLabel.text)
+        
+        let editedNote = NoteModel(title: vcView.title.text, createdDate: Date.getCurrentDateInString(dateStyle: .medium), isFavourite: false, detailsText: vcView.noteDetailsTextView.text, category: editedNoteCategory)
+        
+        viewModel.editNote(with: editedNote)
+        self.navigationController?.popViewController(animated: true)
     }
     
     private func pickerView(_ title: String){

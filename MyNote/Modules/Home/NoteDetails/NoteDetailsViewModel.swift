@@ -93,6 +93,29 @@ class NoteDetailsViewModel: NoteDetailsViewModelProtocol {
         }
     }
     
+    func editNote(with noteModel: NoteModel) {
+        guard let note = self.note else {
+            return
+        }
+        
+        guard let selectedCategory = getSelectedCategory(name: noteModel.category?.name ?? "") else {
+            return
+        }
+        
+        note.title = noteModel.title
+        note.detailsText = noteModel.detailsText
+        note.isFavourite = noteModel.isFavourite ?? false
+        note.createdDate = noteModel.createdDate
+        note.parentCategory = selectedCategory
+        
+        do {
+            try context.save()
+            NotificationCenter.default.post(name: .refreshNotes, object: nil)
+        }catch {
+            print("Error saving context\(error)")
+        }
+    }
+    
     func deleteNote() {
         guard let note = note else {
             return
