@@ -13,6 +13,7 @@ class NoteTableViewCell: UITableViewCell {
     @IBOutlet weak var noteTagListView: TagListView!
     @IBOutlet weak var noteTitle: UILabel!
     @IBOutlet weak var noteCreatedDate: UILabel!
+    @IBOutlet var favouriteIcon: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,6 +30,8 @@ class NoteTableViewCell: UITableViewCell {
         setUpNoteTagListView(note)
         noteTitle.text = note.title
         noteCreatedDate.text = note.createdDate
+        favouriteIcon.setImageColor(color: .gray)
+        favouriteIcon.image = note.isFavourite ? UIImage(systemName: "star.fill") : UIImage(systemName: "star")
     }
     
     private func setUpNoteTagListView(_ note: Note) {

@@ -21,8 +21,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzG-p5-6iG">
                         <rect key="frame" x="0.0" y="0.0" width="77" height="52"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4ss-Dh-i5H">
-                                <rect key="frame" x="23.5" y="0.5" width="30" height="29.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4ss-Dh-i5H">
+                                <rect key="frame" x="23.5" y="-0.5" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="7cz-Vp-mnA"/>
                                     <constraint firstAttribute="width" constant="30" id="Owu-Kb-fpI"/>
@@ -63,7 +63,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="paperplane" catalog="system" width="128" height="118"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -28,7 +28,8 @@ class NoteDetailsViewModel: NoteDetailsViewModelProtocol {
     
     func setupBottomCollectionViewData() {
         let shareButton = ButtonDisplayModel(title: "Share", image: UIImage(systemName: "paperplane"), buttonType: .share)
-        let starButton = ButtonDisplayModel(title: "Favourite", image: UIImage(systemName: "star"), buttonType: .favourite)
+        let starImage = note?.isFavourite ?? false ? UIImage(systemName: "star.fill") : UIImage(systemName: "star")
+        let starButton = ButtonDisplayModel(title: "Favourite", image: starImage, buttonType: .favourite)
         let deleteButton = ButtonDisplayModel(title: "Delete", image: UIImage(systemName: "trash"), buttonType: .delete)
         let moreButton = ButtonDisplayModel(title: "More", image: UIImage(named: "more"), buttonType: .more)
         bottomButtonArray = [shareButton, starButton, deleteButton, moreButton]
@@ -85,11 +86,28 @@ class NoteDetailsViewModel: NoteDetailsViewModelProtocol {
         case .share:
             break
         case .favourite:
+            favouriteNote()
             break
         case .more:
             break
         default:
             break
+        }
+    }
+    
+    func favouriteNote() {
+        guard let note = self.note else {
+            return
+        }
+        note.isFavourite = !note.isFavourite
+        
+        do {
+            try context.save()
+            setupBottomCollectionViewData()
+            reloadBottomCollectionTableViewClosure?()
+            NotificationCenter.default.post(name: .refreshNotes, object: nil)
+        }catch {
+            print("Error saving context\(error)")
         }
     }
     
