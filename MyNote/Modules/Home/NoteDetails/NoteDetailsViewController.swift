@@ -105,7 +105,7 @@ class NoteDetailsViewController: UIViewController {
     func handleBottomButtonClick(with model: ButtonDisplayModel) {
         switch model.buttonType {
         case .delete:
-            viewModel.deleteNote()
+            deleteNoteButtonPressed()
             break
         case .share:
             shareNote()
@@ -117,6 +117,15 @@ class NoteDetailsViewController: UIViewController {
             break
         default:
             break
+        }
+    }
+    
+    func deleteNoteButtonPressed() {
+        self.showConfirmationMessage("Are you sure to delete?".localized()){ [weak self] in
+            guard let weakSelf = self else {
+                return
+            }
+            weakSelf.viewModel.deleteNote()
         }
     }
     
