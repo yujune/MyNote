@@ -78,23 +78,6 @@ class NoteDetailsViewModel: NoteDetailsViewModelProtocol {
         }
     }
     
-    func handleBottomButtonClick(with model: ButtonDisplayModel) {
-        switch model.buttonType {
-        case .delete:
-            deleteNote()
-            break
-        case .share:
-            break
-        case .favourite:
-            favouriteNote()
-            break
-        case .more:
-            break
-        default:
-            break
-        }
-    }
-    
     func favouriteNote() {
         guard let note = self.note else {
             return

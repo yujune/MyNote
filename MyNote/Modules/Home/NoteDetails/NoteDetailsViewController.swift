@@ -101,6 +101,36 @@ class NoteDetailsViewController: UIViewController {
         
         self.present(pickerViewController, animated: true, completion: nil)
     }
+    
+    func handleBottomButtonClick(with model: ButtonDisplayModel) {
+        switch model.buttonType {
+        case .delete:
+            viewModel.deleteNote()
+            break
+        case .share:
+            shareNote()
+            break
+        case .favourite:
+            viewModel.favouriteNote()
+            break
+        case .more:
+            break
+        default:
+            break
+        }
+    }
+    
+    func shareNote() {
+        guard let note = viewModel.note else {
+            return
+        }
+        
+        let activityController = UIActivityViewController(activityItems: [(note.title ?? "") + "\n" + (note.detailsText ?? "")], applicationActivities: nil)
+        activityController.popoverPresentationController?.sourceView = self.view
+        activityController.excludedActivityTypes = [UIActivity.ActivityType.airDrop]
+        self.present(activityController, animated: true) {
+        }
+    }
 }
 
 //MARK: - UITableViewDataSource
@@ -142,7 +172,7 @@ extension NoteDetailsViewController: UICollectionViewDataSource {
 //MARK: - UICollectionViewDelegate
 extension NoteDetailsViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        viewModel.handleBottomButtonClick(with: viewModel.bottomButtonArray[indexPath.row])
+        handleBottomButtonClick(with: viewModel.bottomButtonArray[indexPath.row])
     }
 }
 
