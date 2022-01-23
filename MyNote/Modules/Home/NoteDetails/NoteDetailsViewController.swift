@@ -108,10 +108,10 @@ class NoteDetailsViewController: UIViewController {
             deleteNoteButtonPressed()
             break
         case .share:
-            shareNote()
+            shareButtonPressed()
             break
         case .favourite:
-            viewModel.favouriteNote()
+            favouriteButtonPressed()
             break
         case .more:
             break
@@ -129,7 +129,7 @@ class NoteDetailsViewController: UIViewController {
         }
     }
     
-    func shareNote() {
+    func shareButtonPressed() {
         guard let note = viewModel.note else {
             return
         }
@@ -139,6 +139,10 @@ class NoteDetailsViewController: UIViewController {
         activityController.excludedActivityTypes = [UIActivity.ActivityType.airDrop]
         self.present(activityController, animated: true) {
         }
+    }
+    
+    func favouriteButtonPressed() {
+        viewModel.favouriteNote()
     }
 }
 
