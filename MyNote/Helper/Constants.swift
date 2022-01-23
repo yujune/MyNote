@@ -7,6 +7,8 @@
 
 import UIKit
 
+let appName = Bundle.main.infoDictionary?[kCFBundleNameKey as String] as! String
+
 enum CategoryName: String {
     case all = "All"
     case personal = "Personal"
