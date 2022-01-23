@@ -42,13 +42,13 @@ class NoteTableViewCell: UITableViewCell {
         }
         noteTagListView.addTag(note.parentCategory?.name ?? "")
         noteTagListView.tagViews[tagIndex].tagBackgroundColor = getCategoryUIColor(from: note.parentCategory?.color ?? "")
-        noteTagListView.textColor = UIColor.black
+        noteTagListView.textColor = UIColor.white
         
         if note.isFavourite {
             noteTagListView.addTag("Favourite")
-            noteTagListView.tagViews[tagIndex].tagBackgroundColor = UIColor.yellow
-            noteTagListView.textColor = UIColor.black
             tagIndex += 1
+            noteTagListView.tagViews[tagIndex].tagBackgroundColor = UIColor.yellow
+            noteTagListView.tagViews[tagIndex].textColor = UIColor.gray
         }
     }
     
