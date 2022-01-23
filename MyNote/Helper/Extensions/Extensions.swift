@@ -100,6 +100,76 @@ extension UIView {
     }
 }
 
+extension UIViewController {
+    func showErrorMessage(_ message: String) {
+        let alertController = UIAlertController(title: appName.localized(), message: message.localized(), preferredStyle: .alert)
+        
+        let okButton = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .cancel) { (action) in
+        }
+        
+        alertController.addAction(okButton)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func showErrorMessage(_ message: String, completion: @escaping (() -> Void)) {
+        let alertController = UIAlertController(title: appName.localized(), message: message.localized(), preferredStyle: .alert)
+        
+        let okButton = UIAlertAction(title: "OK".localized(), style: .cancel) { (action) in
+            completion()
+        }
+        
+        alertController.addAction(okButton)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func showInfoMessage(_ message: String) {
+        let alertController = UIAlertController(title: appName.localized(), message: message.localized(), preferredStyle: .alert)
+        
+        let okButton = UIAlertAction(title: "OK".localized(), style: .cancel) { (action) in
+        }
+        
+        alertController.addAction(okButton)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func showInfoMessage(title: String, message: String) {
+        let alertController = UIAlertController(title: title.localized(), message: message.localized(), preferredStyle: .alert)
+        
+        let okButton = UIAlertAction(title: "OK".localized(), style: .cancel) { (action) in
+        }
+        
+        alertController.addAction(okButton)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func showInfoMessage(_ message: String, completion: @escaping (() -> Void)) {
+        let alertController = UIAlertController(title: appName.localized(), message: message.localized(), preferredStyle: .alert)
+        
+        let okButton = UIAlertAction(title: "OK".localized(), style: .default) { (action) in
+            completion()
+        }
+        
+        alertController.addAction(okButton)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func showConfirmationMessage(_ message: String, cancelCompletion: (() -> Void)? = nil, confirmCompletion: @escaping (() -> Void)) {
+        let alertController = UIAlertController(title: appName.localized(), message: message.localized(), preferredStyle: .alert)
+        
+        let cancelButton = UIAlertAction(title: "Cancel".localized(), style: .cancel) { (action) in
+            cancelCompletion?()
+        }
+        let okButton = UIAlertAction(title: "Confirm".localized(), style: .default) { (action) in
+            confirmCompletion()
+        }
+        
+        alertController.addAction(cancelButton)
+        alertController.addAction(okButton)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+}
+
 extension UITableView {
     func setEmptyMessage(_ message: String) {
         let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
