@@ -22,13 +22,13 @@ class NoteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBindings()
-        viewModel.loadData()
         viewModel.loadCategoryData()
         if viewModel.hasAnyCategory() {
             vcView.categoryLabel.text = viewModel.noteCategoryArray?[0].name;
         } else {
             vcView.categoryLabel.text = "No Category"
         }
+        loadData()
         NotificationCenter.default.addObserver(self, selector: #selector(refreshNotesTable), name: .refreshNotes, object: nil)
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
     }
@@ -50,8 +50,16 @@ class NoteViewController: UIViewController {
         vcView.categoryButton.addTarget(self, action: #selector(pickerButtonPressed), for: .touchUpInside)
     }
     
+    func loadData() {
+        if let category = vcView.categoryLabel.text {
+            viewModel.filterNote(with: category)
+        } else {
+            viewModel.loadData()
+        }
+    }
+    
     @objc func refreshNotesTable() {
-        viewModel.loadData()
+        loadData()
         refreshControl.endRefreshing()
     }
     
