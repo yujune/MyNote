@@ -51,7 +51,7 @@ class NoteViewController: UIViewController {
     }
     
     func loadData() {
-        if let category = vcView.categoryLabel.text {
+        if let category = vcView.categoryLabel.text, category != CategoryName.all.rawValue {
             viewModel.filterNote(with: category)
         } else {
             viewModel.loadData()
