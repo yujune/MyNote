@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Messageable: class {
+protocol Messageable: AnyObject {
     var showInfoMessage: ((String) -> Void)? { get set }
     var showErrorMessage: ((String) -> Void)? { get set }
 }
