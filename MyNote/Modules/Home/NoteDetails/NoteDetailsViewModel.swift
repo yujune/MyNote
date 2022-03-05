@@ -27,11 +27,11 @@ class NoteDetailsViewModel: NoteDetailsViewModelProtocol {
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     func setupBottomCollectionViewData() {
-        let shareButton = ButtonDisplayModel(title: "Share", image: UIImage(systemName: "paperplane"), buttonType: .share)
+        let shareButton = ButtonDisplayModel(title: "Share".localized(), image: UIImage(systemName: "paperplane"), buttonType: .share)
         let starImage = note?.isFavourite ?? false ? UIImage(systemName: "star.fill") : UIImage(systemName: "star")
-        let starButton = ButtonDisplayModel(title: "Favourite", image: starImage, buttonType: .favourite)
-        let deleteButton = ButtonDisplayModel(title: "Delete", image: UIImage(systemName: "trash"), buttonType: .delete)
-        let moreButton = ButtonDisplayModel(title: "More", image: UIImage(named: "more"), buttonType: .more)
+        let starButton = ButtonDisplayModel(title: "Favourite".localized(), image: starImage, buttonType: .favourite)
+        let deleteButton = ButtonDisplayModel(title: "Delete".localized(), image: UIImage(systemName: "trash"), buttonType: .delete)
+        let moreButton = ButtonDisplayModel(title: "More".localized(), image: UIImage(named: "more"), buttonType: .more)
         bottomButtonArray = [shareButton, starButton, deleteButton, moreButton]
     }
     

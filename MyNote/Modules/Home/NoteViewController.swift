@@ -21,7 +21,7 @@ class NoteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "NOTE"
+        self.title = "NOTE".localized()
         setupBindings()
         viewModel.loadCategoryData()
         if viewModel.hasAnyCategory() {
@@ -45,7 +45,7 @@ class NoteViewController: UIViewController {
             guard let weakSelf = self else{
                 return
             }
-            weakSelf.vcView.notesCountLabel.text = "\(weakSelf.viewModel.noteArray?.count ?? 0) notes"
+            weakSelf.vcView.notesCountLabel.text = "\(weakSelf.viewModel.noteArray?.count ?? 0)" + "notes".localized()
             weakSelf.vcView.noteTableView.reloadData()
         }
         vcView.categoryButton.addTarget(self, action: #selector(pickerButtonPressed), for: .touchUpInside)
@@ -107,7 +107,7 @@ extension NoteViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let noteArrayCount = viewModel.noteArray?.count ?? 0
         if noteArrayCount == 0 {
-            self.vcView.noteTableView.setEmptyMessage("Empty")
+            self.vcView.noteTableView.setEmptyMessage("Empty".localized())
         } else {
             self.vcView.noteTableView.restore()
         }

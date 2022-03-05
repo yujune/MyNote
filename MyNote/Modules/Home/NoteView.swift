@@ -11,7 +11,11 @@ import UIKit
 class NoteView: UIView {
     
     
-    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var searchBar: UISearchBar! {
+        didSet {
+            searchBar.placeholder = "Search notes...".localized()
+        }
+    }
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var categoryButton: UIButton!
     @IBOutlet weak var notesCountLabel: UILabel!

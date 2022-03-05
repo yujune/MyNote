@@ -8,7 +8,11 @@
 import UIKit
 
 class NodataTableViewCell: UITableViewCell {
-    @IBOutlet var nodataLabel: UILabel!
+    @IBOutlet var nodataLabel: UILabel! {
+        didSet {
+            nodataLabel.text = "No Data".localized()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

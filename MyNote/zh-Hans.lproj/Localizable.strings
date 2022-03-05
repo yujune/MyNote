@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  MyNote
+
+  Created by Tee Yu June on 05/03/2022.
+  
+*/
+"NOTE" = "笔记";
+"TODO" = "清单";
+"Todo" = "清单";
+"todo" = "清单";
+"No Data" = "空";
+"Delete" = "删除";
+"Done" = "完成";
+"Share" = "分享";
+"More" = "更多";
+"Favourite" = "喜欢";
+"Search notes..." = "查找笔记...";
+"notes" = "笔记";
+"Empty" = "空";
+"todos" = "清单";
+"Todos" = "全部清单";
+"completed" = "已完成";
+"Add your todo here" = "添加您的项目";
+"Cancel" = "取消";
+"Save" = "储存";
+"Write something..." = "写点东西...";
+"Title" = "题目";
+"Select" = "选择";

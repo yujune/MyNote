@@ -70,7 +70,7 @@ class TodoViewController: UIViewController {
             print("fail to dequeue")
             return
         }
-        headerView.updateDisplay(with: "\(viewModel.todoArray[TodoSection.Todo.rawValue].count) todos, \(viewModel.todoArray[TodoSection.Completed.rawValue].count) completed")
+        headerView.updateDisplay(with: "\(viewModel.todoArray[TodoSection.Todo.rawValue].count) " + "todo".localized() + "," + " \(viewModel.todoArray[TodoSection.Completed.rawValue].count)" + "completed".localized())
         vcView.tableView.tableHeaderView = headerView
     }
 }
@@ -151,7 +151,7 @@ extension TodoViewController {
 
 extension TodoViewController: BarButtonItemProtocol {
     func addBarButtonPressed() {
-        let alert = UIAlertController(title: "Todo".localized(), message: "Add you todo here".localized(), preferredStyle: .alert)
+        let alert = UIAlertController(title: "Todo".localized(), message: "Add your todo here".localized(), preferredStyle: .alert)
         let saveAction = UIAlertAction(title: "Save".localized(), style: .default) {action in
             guard let todo = alert.textFields?[0] else {
                 return
@@ -163,7 +163,7 @@ extension TodoViewController: BarButtonItemProtocol {
             self.updateHeader()
             self.vcView.tableView.reloadData()
         }
-        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: { (action) -> Void in })
+        let cancelAction = UIAlertAction(title: "Cancel".localized(), style: .destructive, handler: { (action) -> Void in })
         alert.addTextField { (textField: UITextField) in
             textField.placeholder = "Write something...".localized()
         }

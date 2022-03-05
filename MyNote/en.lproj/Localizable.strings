@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  MyNote
+
+  Created by Tee Yu June on 05/03/2022.
+  
+*/
+"NOTE" = "NOTE";
+"TODO" = "TODO";
+"Todo" = "Todo";
+"todo" = "todo";
+"No Data" = "No Data";
+"Delete" = "Delete";
+"Done" = "Done";
+"Share" = "Share";
+"More" = "More";
+"Favourite" = "Favourite";
+"Search notes..." = "Search notes...";
+"notes" = "notes";
+"Empty" = "Empty";
+"todos" = "todos";
+"completed" = "completed";
+"Add your todo here" = "Add your todo here";
+"Cancel" = "Cancel";
+"Save" = "Save";
+"Write something..." = "Write something...";
+"Title" = "Title";
+"Select" = "Select";

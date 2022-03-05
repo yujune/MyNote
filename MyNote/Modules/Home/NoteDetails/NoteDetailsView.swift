@@ -10,7 +10,11 @@ import UIKit
 
 class NoteDetailsView: UIView {
     
-    @IBOutlet weak var title: UITextField!
+    @IBOutlet weak var title: UITextField! {
+        didSet {
+            title.placeholder = "Title".localized()
+        }
+    }
     @IBOutlet weak var createdDate: UILabel! {
         didSet {
             createdDate.text = Date.getCurrentDateInString(dateStyle: .medium)
@@ -18,7 +22,11 @@ class NoteDetailsView: UIView {
     }
     @IBOutlet weak var categoryButton: UIButton!
     @IBOutlet weak var categoryLabel: UILabel!
-    @IBOutlet weak var noteDetailsTextView: UITextView!
+    @IBOutlet weak var noteDetailsTextView: UITextView! {
+        didSet {
+            noteDetailsTextView.text = "Write something...".localized()
+        }
+    }
     @IBOutlet var bottomCollectionView: UICollectionView! {
         didSet {
             bottomCollectionView.registerCell(with: ButtonCollectionViewCell.self)
