@@ -130,6 +130,21 @@ extension NoteViewController: UITableViewDelegate {
         let selectedNote = viewModel.noteArray?[indexPath.row] ?? Note()
         viewModel.delegate?.navigateToNoteDetails(note: selectedNote, isCreateNote: false)
     }
+    
+    func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        "Delete".localized()
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            guard let note = viewModel.noteArray?[indexPath.row] else {
+                return
+            }
+            viewModel.noteArray?.remove(at: indexPath.row)
+            viewModel.deleteNote(with: note)
+            tableView.deleteRows(at: [indexPath], with: .left)
+        }
+    }
 }
 
 //MARK: - Search Bar

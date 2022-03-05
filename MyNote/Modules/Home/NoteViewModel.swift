@@ -71,4 +71,8 @@ class NoteViewModel: NoteViewModelProtocol {
             return false
         }
     }
+    
+    func deleteNote(with note: Note) {
+        NoteModel.delete(with: note)
+    }
 }
