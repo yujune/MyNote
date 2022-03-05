@@ -24,6 +24,12 @@ class NoteDetailsViewController: UIViewController {
         setupCollectionView()
         viewModel.loadCategoryData()
         vcView.updateDisplay(note: viewModel.note ?? nil)
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.tabBarController?.tabBar.isHidden = false
     }
     
     func setupBindings() {
