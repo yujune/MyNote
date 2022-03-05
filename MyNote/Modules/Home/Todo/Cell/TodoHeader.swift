@@ -11,4 +11,7 @@ class TodoHeader: UITableViewHeaderFooterView {
     @IBOutlet var headerTitle: UILabel!
     @IBOutlet var statusLabel: UILabel!
     
+    func updateDisplay(with label: String) {
+        statusLabel.text = label
+    }
 }

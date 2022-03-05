@@ -47,12 +47,7 @@ class TodoViewController: UIViewController {
         vcView.tableView.dataSource = self
         vcView.tableView.estimatedRowHeight = 100
         vcView.tableView.rowHeight = UITableView.automaticDimension
-        guard let headerView = vcView.tableView.dequeueReusableHeaderFooterView(withIdentifier: TodoHeader.identifier) as? TodoHeader else {
-            print("fail to dequeue")
-            return
-        }
-        vcView.tableView.tableHeaderView = headerView
-        vcView.tableView.separatorStyle = .none
+        updateHeader()
     }
     
     func setupBindings() {
@@ -62,6 +57,22 @@ class TodoViewController: UIViewController {
             }
             weakSelf.vcView.tableView.reloadData()
         }
+        viewModel.roloadTableViewHeaderClosure = { [weak self] in
+            guard let weakSelf = self else {
+                return
+            }
+            weakSelf.updateHeader()
+        }
+    }
+    
+    func updateHeader() {
+        guard let headerView = vcView.tableView.dequeueReusableHeaderFooterView(withIdentifier: TodoHeader.identifier) as? TodoHeader else {
+            print("fail to dequeue")
+            return
+        }
+        headerView.updateDisplay(with: "\(viewModel.todoArray[TodoSection.Todo.rawValue].count) todos, \(viewModel.todoArray[TodoSection.Completed.rawValue].count) completed")
+        vcView.tableView.tableHeaderView = headerView
+        vcView.tableView.separatorStyle = .none
     }
 }
 
