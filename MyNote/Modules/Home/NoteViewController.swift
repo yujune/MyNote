@@ -21,6 +21,7 @@ class NoteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "NOTE"
         setupBindings()
         viewModel.loadCategoryData()
         if viewModel.hasAnyCategory() {
