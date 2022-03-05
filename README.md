@@ -1,5 +1,9 @@
 # MyNote
-This is an ios note app developed using swift programming language with UIkit and MVVM-C architecture. The database used is Coredata which store the data locally in the device. <br/>
+This is an ios note app developed using swift programming language with UIkit and MVVM-C architecture. The database used is Coredata which store the data locally in the device. <br/> <br/>
+Supported localization:
+- English.
+- Mandarin.
+
 The feature of this app included:
 - add note.
 - edit note.
@@ -38,4 +42,4 @@ git checkout development
 
 ## Roadmap
 - [ ] Push Notification to remind todo.
-- [ ] Support English and Mandarin localization.
+- [x] Support English and Mandarin localization.
