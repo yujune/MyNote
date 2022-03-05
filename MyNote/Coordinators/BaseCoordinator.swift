@@ -33,9 +33,3 @@ class BaseCoordinator: NSObject, Coordinator {
         navigationController.pushViewController(vc, animated: true)
     }
 }
-
-extension BaseCoordinator: BarButtonItemProtocol {
-    func addBarButtonPressed() {
-        navigateToNoteDetails(note: nil, isCreateNote: true)
-    }
-}

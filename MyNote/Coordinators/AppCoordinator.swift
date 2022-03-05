@@ -16,7 +16,7 @@ class AppCoordinator: BaseCoordinator {
         if login {
             goToLogin()
         }else {
-            goToNoteList()
+            runTabCoordinator()
         }
     }
     
@@ -30,5 +30,12 @@ class AppCoordinator: BaseCoordinator {
         let noteCoordinator = NoteCoordinator(with: self.navigationController)
         noteCoordinator.start()
         addDependency(noteCoordinator)
+    }
+    
+    private func runTabCoordinator() {
+        let coordinator = MainTabCoordinator.init(with: self.navigationController)
+        NotificationCenter.default.removeObserver(self)
+        coordinator.start()
+        addDependency(coordinator)
     }
 }

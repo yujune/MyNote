@@ -26,3 +26,8 @@ class NoteCoordinator: BaseCoordinator {
 extension NoteCoordinator: NoteViewModelProtocolDelegate {
 }
 
+extension NoteCoordinator: BarButtonItemProtocol {
+    func addBarButtonPressed() {
+        navigateToNoteDetails(note: nil, isCreateNote: true)
+    }
+}
