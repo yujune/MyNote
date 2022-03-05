@@ -28,6 +28,26 @@
 		B57A64CF279652C000BEC149 /* ButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A64CD279652C000BEC149 /* ButtonCollectionViewCell.swift */; };
 		B57A64D0279652C000BEC149 /* ButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57A64CE279652C000BEC149 /* ButtonCollectionViewCell.xib */; };
 		B57A64D3279658BB00BEC149 /* DisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A64D2279658BB00BEC149 /* DisplayModel.swift */; };
+		B57CAA5527CB2A4300C08FED /* TodoHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57CAA5427CB2A4300C08FED /* TodoHeader.xib */; };
+		B57CAA5727CB2A8600C08FED /* TodoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57CAA5627CB2A8600C08FED /* TodoHeader.swift */; };
+		B57CAA5927CB493E00C08FED /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57CAA5827CB493E00C08FED /* TodoModel.swift */; };
+		B583A0BF27CA62AD007352B4 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B583A0BD27CA62AD007352B4 /* TodoTableViewCell.swift */; };
+		B583A0C027CA62AD007352B4 /* TodoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B583A0BE27CA62AD007352B4 /* TodoTableViewCell.xib */; };
+		B58FD3F927CA2526004D4D75 /* TodoViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58FD3F427CA2526004D4D75 /* TodoViewModelProtocol.swift */; };
+		B58FD3FA27CA2526004D4D75 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58FD3F527CA2526004D4D75 /* TodoViewController.swift */; };
+		B58FD3FB27CA2526004D4D75 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58FD3F627CA2526004D4D75 /* TodoView.swift */; };
+		B58FD3FC27CA2526004D4D75 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58FD3F727CA2526004D4D75 /* TodoViewModel.swift */; };
+		B58FD3FD27CA2526004D4D75 /* TodoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B58FD3F827CA2526004D4D75 /* TodoView.xib */; };
+		B58FD3FF27CA255E004D4D75 /* TodoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58FD3FE27CA255E004D4D75 /* TodoCoordinator.swift */; };
+		B59C4A8D27CC6648008E7CB8 /* NodataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C4A8B27CC6648008E7CB8 /* NodataTableViewCell.swift */; };
+		B59C4A8E27CC6648008E7CB8 /* NodataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59C4A8C27CC6648008E7CB8 /* NodataTableViewCell.xib */; };
+		B5C4998C27BFF8F6007CF148 /* BottomTabViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C4998727BFF8F6007CF148 /* BottomTabViewModelProtocol.swift */; };
+		B5C4998D27BFF8F6007CF148 /* BottomTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C4998827BFF8F6007CF148 /* BottomTabViewController.swift */; };
+		B5C4998E27BFF8F6007CF148 /* BottomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C4998927BFF8F6007CF148 /* BottomTabView.swift */; };
+		B5C4998F27BFF8F6007CF148 /* BottomTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C4998A27BFF8F6007CF148 /* BottomTabViewModel.swift */; };
+		B5C4999027BFF8F6007CF148 /* BottomTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5C4998B27BFF8F6007CF148 /* BottomTabView.xib */; };
+		B5CCD46B27C0786A00F31AEC /* MainTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CCD46A27C0786A00F31AEC /* MainTabCoordinator.swift */; };
+		B5CCD46D27C07E6400F31AEC /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CCD46C27C07E6400F31AEC /* MainTabBar.storyboard */; };
 		B5EADA35264CCB1C0098DE7E /* NoteViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EADA30264CCB1C0098DE7E /* NoteViewModelProtocol.swift */; };
 		B5EADA36264CCB1C0098DE7E /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EADA31264CCB1C0098DE7E /* NoteViewController.swift */; };
 		B5EADA37264CCB1C0098DE7E /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EADA32264CCB1C0098DE7E /* NoteView.swift */; };
@@ -102,6 +122,26 @@
 		B57A64CD279652C000BEC149 /* ButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		B57A64CE279652C000BEC149 /* ButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCollectionViewCell.xib; sourceTree = "<group>"; };
 		B57A64D2279658BB00BEC149 /* DisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayModel.swift; sourceTree = "<group>"; };
+		B57CAA5427CB2A4300C08FED /* TodoHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoHeader.xib; sourceTree = "<group>"; };
+		B57CAA5627CB2A8600C08FED /* TodoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoHeader.swift; sourceTree = "<group>"; };
+		B57CAA5827CB493E00C08FED /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		B583A0BD27CA62AD007352B4 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
+		B583A0BE27CA62AD007352B4 /* TodoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoTableViewCell.xib; sourceTree = "<group>"; };
+		B58FD3F427CA2526004D4D75 /* TodoViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModelProtocol.swift; sourceTree = "<group>"; };
+		B58FD3F527CA2526004D4D75 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		B58FD3F627CA2526004D4D75 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		B58FD3F727CA2526004D4D75 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		B58FD3F827CA2526004D4D75 /* TodoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoView.xib; sourceTree = "<group>"; };
+		B58FD3FE27CA255E004D4D75 /* TodoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCoordinator.swift; sourceTree = "<group>"; };
+		B59C4A8B27CC6648008E7CB8 /* NodataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodataTableViewCell.swift; sourceTree = "<group>"; };
+		B59C4A8C27CC6648008E7CB8 /* NodataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NodataTableViewCell.xib; sourceTree = "<group>"; };
+		B5C4998727BFF8F6007CF148 /* BottomTabViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabViewModelProtocol.swift; sourceTree = "<group>"; };
+		B5C4998827BFF8F6007CF148 /* BottomTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabViewController.swift; sourceTree = "<group>"; };
+		B5C4998927BFF8F6007CF148 /* BottomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabView.swift; sourceTree = "<group>"; };
+		B5C4998A27BFF8F6007CF148 /* BottomTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabViewModel.swift; sourceTree = "<group>"; };
+		B5C4998B27BFF8F6007CF148 /* BottomTabView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomTabView.xib; sourceTree = "<group>"; };
+		B5CCD46A27C0786A00F31AEC /* MainTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCoordinator.swift; sourceTree = "<group>"; };
+		B5CCD46C27C07E6400F31AEC /* MainTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBar.storyboard; sourceTree = "<group>"; };
 		B5EADA30264CCB1C0098DE7E /* NoteViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModelProtocol.swift; sourceTree = "<group>"; };
 		B5EADA31264CCB1C0098DE7E /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		B5EADA32264CCB1C0098DE7E /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
@@ -195,6 +235,7 @@
 		B51B18D0264C134300D044BD /* MyNote */ = {
 			isa = PBXGroup;
 			children = (
+				B59C4A8927CC660E008E7CB8 /* ReusableCell */,
 				B5EADAAC264D2A130098DE7E /* Coordinators */,
 				B5EADA2F264CC57E0098DE7E /* Resources */,
 				B51B1909264C234500D044BD /* Helper */,
@@ -231,6 +272,7 @@
 		B51B1904264C22F700D044BD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B5D2365F27BFEC9700B8688C /* BottomTab */,
 				B5EADA2B264CC42E0098DE7E /* Login */,
 				B51B1912264C24E800D044BD /* Home */,
 			);
@@ -257,6 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				B57A64D12796587500BEC149 /* DisplayModel */,
+				B57CAA5827CB493E00C08FED /* TodoModel.swift */,
 				B5EADAF0264D4FE30098DE7E /* NoteModel.swift */,
 				B570CFD4264E0CEB00B1BBAA /* DataModel.xcdatamodeld */,
 			);
@@ -278,6 +321,7 @@
 		B51B1912264C24E800D044BD /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B58FD3F327CA1C2E004D4D75 /* Todo */,
 				B570CFFE264E1DC400B1BBAA /* NoteDetails */,
 				B5EADADB264D437E0098DE7E /* Cell */,
 				B5EADA30264CCB1C0098DE7E /* NoteViewModelProtocol.swift */,
@@ -327,6 +371,60 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		B583A0BC27CA61FB007352B4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B583A0BD27CA62AD007352B4 /* TodoTableViewCell.swift */,
+				B583A0BE27CA62AD007352B4 /* TodoTableViewCell.xib */,
+				B57CAA5427CB2A4300C08FED /* TodoHeader.xib */,
+				B57CAA5627CB2A8600C08FED /* TodoHeader.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B58FD3F327CA1C2E004D4D75 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				B583A0BC27CA61FB007352B4 /* Cell */,
+				B58FD3F427CA2526004D4D75 /* TodoViewModelProtocol.swift */,
+				B58FD3F527CA2526004D4D75 /* TodoViewController.swift */,
+				B58FD3F627CA2526004D4D75 /* TodoView.swift */,
+				B58FD3F727CA2526004D4D75 /* TodoViewModel.swift */,
+				B58FD3F827CA2526004D4D75 /* TodoView.xib */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		B59C4A8927CC660E008E7CB8 /* ReusableCell */ = {
+			isa = PBXGroup;
+			children = (
+				B59C4A8A27CC661E008E7CB8 /* NoDataCell */,
+			);
+			path = ReusableCell;
+			sourceTree = "<group>";
+		};
+		B59C4A8A27CC661E008E7CB8 /* NoDataCell */ = {
+			isa = PBXGroup;
+			children = (
+				B59C4A8B27CC6648008E7CB8 /* NodataTableViewCell.swift */,
+				B59C4A8C27CC6648008E7CB8 /* NodataTableViewCell.xib */,
+			);
+			path = NoDataCell;
+			sourceTree = "<group>";
+		};
+		B5D2365F27BFEC9700B8688C /* BottomTab */ = {
+			isa = PBXGroup;
+			children = (
+				B5C4998727BFF8F6007CF148 /* BottomTabViewModelProtocol.swift */,
+				B5C4998827BFF8F6007CF148 /* BottomTabViewController.swift */,
+				B5C4998927BFF8F6007CF148 /* BottomTabView.swift */,
+				B5C4998A27BFF8F6007CF148 /* BottomTabViewModel.swift */,
+				B5C4998B27BFF8F6007CF148 /* BottomTabView.xib */,
+				B5CCD46C27C07E6400F31AEC /* MainTabBar.storyboard */,
+			);
+			path = BottomTab;
+			sourceTree = "<group>";
+		};
 		B5EADA2B264CC42E0098DE7E /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +453,8 @@
 				B5EADAB5264D2A460098DE7E /* BaseCoordinator.swift */,
 				B5EADAC3264D2C3D0098DE7E /* LoginCoordinator.swift */,
 				B5EADAC8264D2C490098DE7E /* NoteCoordinator.swift */,
+				B5CCD46A27C0786A00F31AEC /* MainTabCoordinator.swift */,
+				B58FD3FE27CA255E004D4D75 /* TodoCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -495,14 +595,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59C4A8E27CC6648008E7CB8 /* NodataTableViewCell.xib in Resources */,
 				B57A64D0279652C000BEC149 /* ButtonCollectionViewCell.xib in Resources */,
+				B5CCD46D27C07E6400F31AEC /* MainTabBar.storyboard in Resources */,
 				B51B18DE264C134600D044BD /* LaunchScreen.storyboard in Resources */,
 				B51B18DB264C134600D044BD /* Assets.xcassets in Resources */,
 				B5EADA39264CCB1C0098DE7E /* NoteView.xib in Resources */,
+				B58FD3FD27CA2526004D4D75 /* TodoView.xib in Resources */,
 				B5EADADF264D43AC0098DE7E /* NoteTableViewCell.xib in Resources */,
 				B5EADAD6264D2CED0098DE7E /* LoginView.xib in Resources */,
+				B5C4999027BFF8F6007CF148 /* BottomTabView.xib in Resources */,
 				B570D008264E1DE600B1BBAA /* NoteDetailsView.xib in Resources */,
 				B51B18D9264C134300D044BD /* Main.storyboard in Resources */,
+				B583A0C027CA62AD007352B4 /* TodoTableViewCell.xib in Resources */,
+				B57CAA5527CB2A4300C08FED /* TodoHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,24 +737,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5EADA38264CCB1C0098DE7E /* NoteViewModel.swift in Sources */,
+				B5C4998D27BFF8F6007CF148 /* BottomTabViewController.swift in Sources */,
 				B5EADA49264CD3990098DE7E /* Messageable.swift in Sources */,
 				B5EADAAE264D2A270098DE7E /* AppCoordinator.swift in Sources */,
 				B5EADAD2264D2CED0098DE7E /* LoginViewModelProtocol.swift in Sources */,
 				B57A64D3279658BB00BEC149 /* DisplayModel.swift in Sources */,
 				B570D004264E1DE600B1BBAA /* NoteDetailsViewModelProtocol.swift in Sources */,
 				B51B190B264C23C200D044BD /* ApiController.swift in Sources */,
+				B58FD3FC27CA2526004D4D75 /* TodoViewModel.swift in Sources */,
 				B5EADAF1264D4FE30098DE7E /* NoteModel.swift in Sources */,
 				B5EADAC9264D2C490098DE7E /* NoteCoordinator.swift in Sources */,
+				B5C4998F27BFF8F6007CF148 /* BottomTabViewModel.swift in Sources */,
 				B5EADAC4264D2C3D0098DE7E /* LoginCoordinator.swift in Sources */,
+				B59C4A8D27CC6648008E7CB8 /* NodataTableViewCell.swift in Sources */,
+				B5C4998C27BFF8F6007CF148 /* BottomTabViewModelProtocol.swift in Sources */,
+				B58FD3FF27CA255E004D4D75 /* TodoCoordinator.swift in Sources */,
 				B54CF967279B8562001BA74F /* ButtonDisplayModel.swift in Sources */,
 				B5EADADE264D43AC0098DE7E /* NoteTableViewCell.swift in Sources */,
+				B58FD3FB27CA2526004D4D75 /* TodoView.swift in Sources */,
+				B58FD3F927CA2526004D4D75 /* TodoViewModelProtocol.swift in Sources */,
 				B570CFD6264E0CEB00B1BBAA /* DataModel.xcdatamodeld in Sources */,
 				B51B18D2264C134300D044BD /* AppDelegate.swift in Sources */,
+				B583A0BF27CA62AD007352B4 /* TodoTableViewCell.swift in Sources */,
 				B5EADAFB264D56470098DE7E /* Enums.swift in Sources */,
 				B570D007264E1DE600B1BBAA /* NoteDetailsViewModel.swift in Sources */,
 				B57A64CF279652C000BEC149 /* ButtonCollectionViewCell.swift in Sources */,
+				B57CAA5927CB493E00C08FED /* TodoModel.swift in Sources */,
 				B570D005264E1DE600B1BBAA /* NoteDetailsViewController.swift in Sources */,
+				B58FD3FA27CA2526004D4D75 /* TodoViewController.swift in Sources */,
 				B570D006264E1DE600B1BBAA /* NoteDetailsView.swift in Sources */,
+				B57CAA5727CB2A8600C08FED /* TodoHeader.swift in Sources */,
 				B5EADAD5264D2CED0098DE7E /* LoginViewModel.swift in Sources */,
 				B5EADAF6264D56390098DE7E /* Constants.swift in Sources */,
 				B5EADA56264CD87F0098DE7E /* Extensions.swift in Sources */,
@@ -657,6 +775,8 @@
 				B5EADA36264CCB1C0098DE7E /* NoteViewController.swift in Sources */,
 				B5EADB00264D6FA70098DE7E /* BarButtonItemProtocol.swift in Sources */,
 				B5EADABC264D2A6C0098DE7E /* Coordinator.swift in Sources */,
+				B5C4998E27BFF8F6007CF148 /* BottomTabView.swift in Sources */,
+				B5CCD46B27C0786A00F31AEC /* MainTabCoordinator.swift in Sources */,
 				B5EADAD3264D2CED0098DE7E /* LoginViewController.swift in Sources */,
 				B5EADA37264CCB1C0098DE7E /* NoteView.swift in Sources */,
 				B5EADAB6264D2A460098DE7E /* BaseCoordinator.swift in Sources */,
