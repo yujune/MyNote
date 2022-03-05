@@ -35,3 +35,7 @@ cd your-project-location
 git checkout development
 ```
 4. Open up `MyNote.xcworkspace` using Xcode and run the project.
+
+## Roadmap
+- [ ] Push Notification to remind todo.
+- [ ] Support English and Mandarin localization.
