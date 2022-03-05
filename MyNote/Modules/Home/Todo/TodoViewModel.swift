@@ -43,4 +43,14 @@ class TodoViewModel: TodoViewModelProtocol {
             print(error)
         }
     }
+    
+    func deleteTodo(with todo: Todo) {
+        do {
+            let result = try context.existingObject(with: todo.objectID)
+            context.delete(result)
+            try context.save()
+        } catch {
+            print(error)
+        }
+    }
 }

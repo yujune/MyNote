@@ -72,7 +72,6 @@ class TodoViewController: UIViewController {
         }
         headerView.updateDisplay(with: "\(viewModel.todoArray[TodoSection.Todo.rawValue].count) todos, \(viewModel.todoArray[TodoSection.Completed.rawValue].count) completed")
         vcView.tableView.tableHeaderView = headerView
-        vcView.tableView.separatorStyle = .none
     }
 }
 
@@ -128,6 +127,21 @@ extension TodoViewController: UITableViewDelegate {
         
         return TodoSection.Completed.getTodoSectionTitle()
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        "Delete".localized()
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            viewModel.deleteTodo(with: viewModel.todoArray[indexPath.section][indexPath.row])
+            tableView.deleteRows(at: [indexPath], with: .left)
+        }
+    }
 }
 
 //MARK: - Private
@@ -146,6 +160,7 @@ extension TodoViewController: BarButtonItemProtocol {
             todoModel.title = todo.text
             todoModel.isCompleted = false
             self.viewModel.saveData(with: todoModel)
+            self.updateHeader()
             self.vcView.tableView.reloadData()
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: { (action) -> Void in })
