@@ -11,7 +11,11 @@ import UIKit
 class NoteDetailsView: UIView {
     
     @IBOutlet weak var title: UITextField!
-    @IBOutlet weak var createdDate: UILabel!
+    @IBOutlet weak var createdDate: UILabel! {
+        didSet {
+            createdDate.text = Date.getCurrentDateInString(dateStyle: .medium)
+        }
+    }
     @IBOutlet weak var categoryButton: UIButton!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var noteDetailsTextView: UITextView!
