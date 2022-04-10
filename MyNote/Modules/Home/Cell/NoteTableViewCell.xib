@@ -48,13 +48,18 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yMn-7V-YIT">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPx-Eu-hUa">
                         <rect key="frame" x="346" y="20" width="25" height="25"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="25" id="EXV-j5-uDQ"/>
-                            <constraint firstAttribute="height" constant="25" id="rBZ-pX-Z5m"/>
+                            <constraint firstAttribute="width" constant="25" id="1Fs-RI-4FK"/>
+                            <constraint firstAttribute="height" constant="25" id="72A-Zd-ug5"/>
                         </constraints>
-                    </imageView>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="favoriteButtonOnPress:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AIX-as-K7B"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Gwx-wd-HcS" firstAttribute="leading" secondItem="EMJ-sZ-Gwh" secondAttribute="leading" id="0cE-wT-ooM"/>
@@ -64,16 +69,16 @@
                     <constraint firstAttribute="bottom" secondItem="Gwx-wd-HcS" secondAttribute="bottom" constant="20" symbolic="YES" id="RaC-GK-WRJ"/>
                     <constraint firstItem="Gwx-wd-HcS" firstAttribute="top" secondItem="v5O-YG-d0y" secondAttribute="bottom" constant="8" symbolic="YES" id="RwF-w8-xap"/>
                     <constraint firstItem="EMJ-sZ-Gwh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="UYV-3t-Cvc"/>
-                    <constraint firstItem="yMn-7V-YIT" firstAttribute="leading" secondItem="EMJ-sZ-Gwh" secondAttribute="trailing" constant="8" symbolic="YES" id="bOu-h9-OMJ"/>
+                    <constraint firstItem="mPx-Eu-hUa" firstAttribute="leading" secondItem="EMJ-sZ-Gwh" secondAttribute="trailing" constant="8" symbolic="YES" id="Vbv-GG-pp5"/>
+                    <constraint firstAttribute="trailing" secondItem="mPx-Eu-hUa" secondAttribute="trailing" constant="20" symbolic="YES" id="czY-Ap-2vi"/>
                     <constraint firstItem="v5O-YG-d0y" firstAttribute="leading" secondItem="EMJ-sZ-Gwh" secondAttribute="leading" id="exa-yn-MtE"/>
-                    <constraint firstAttribute="trailing" secondItem="yMn-7V-YIT" secondAttribute="trailing" constant="20" symbolic="YES" id="jSI-3q-UOI"/>
+                    <constraint firstItem="mPx-Eu-hUa" firstAttribute="top" secondItem="EMJ-sZ-Gwh" secondAttribute="top" id="fC9-GL-ead"/>
                     <constraint firstItem="v5O-YG-d0y" firstAttribute="top" secondItem="EMJ-sZ-Gwh" secondAttribute="bottom" constant="8" symbolic="YES" id="l8h-08-tu8"/>
-                    <constraint firstItem="yMn-7V-YIT" firstAttribute="top" secondItem="EMJ-sZ-Gwh" secondAttribute="top" id="zlN-im-Ta9"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="favouriteIcon" destination="yMn-7V-YIT" id="slA-pA-iT5"/>
+                <outlet property="favoriteButton" destination="mPx-Eu-hUa" id="OXQ-dv-yye"/>
                 <outlet property="noteCreatedDate" destination="Gwx-wd-HcS" id="7DC-RU-eUl"/>
                 <outlet property="noteTagListView" destination="EMJ-sZ-Gwh" id="lds-BG-V49"/>
                 <outlet property="noteTitle" destination="v5O-YG-d0y" id="yvg-iw-tgy"/>

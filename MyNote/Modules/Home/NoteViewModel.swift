@@ -75,4 +75,14 @@ class NoteViewModel: NoteViewModelProtocol {
     func deleteNote(with note: Note) {
         NoteModel.delete(with: note)
     }
+    
+    func favoriteNote(with note: Note) {
+        note.isFavourite = !note.isFavourite
+        do {
+            try context.save()
+            reloadNoteTableView?()
+        }catch {
+            print("Error saving context\(error)")
+        }
+    }
 }

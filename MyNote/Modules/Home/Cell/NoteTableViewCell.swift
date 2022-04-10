@@ -8,13 +8,18 @@
 import UIKit
 import TagListView
 
+protocol NoteTableViewCellDelegate {
+    func favouriteButtonOnPress(with note: Note);
+}
+
 class NoteTableViewCell: UITableViewCell {
 
+    var delegate: NoteTableViewCellDelegate?
+    var note: Note?
     @IBOutlet weak var noteTagListView: TagListView!
     @IBOutlet weak var noteTitle: UILabel!
     @IBOutlet weak var noteCreatedDate: UILabel!
-    @IBOutlet var favouriteIcon: UIImageView!
-    
+    @IBOutlet var favoriteButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,11 +32,16 @@ class NoteTableViewCell: UITableViewCell {
     }
     
     func updateDisplay(note: Note){
+        self.note = note
         setUpNoteTagListView(note)
         noteTitle.text = note.title
         noteCreatedDate.text = note.createdDate
-        favouriteIcon.setImageColor(color: .gray)
-        favouriteIcon.image = note.isFavourite ? UIImage(systemName: "star.fill") : UIImage(systemName: "star")
+        favoriteButton.setTitle("", for: .normal)
+        if (note.isFavourite) {
+            favoriteButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
+        } else {
+            favoriteButton.setImage(UIImage(systemName: "star"), for: .normal)
+        }
     }
     
     private func setUpNoteTagListView(_ note: Note) {
@@ -63,5 +73,12 @@ class NoteTableViewCell: UITableViewCell {
         default:
             return UIColor.gray
         }
+    }
+    
+    @IBAction func favoriteButtonOnPress(_ sender: UIButton) {
+        guard let note = note else {
+            return
+        }
+        delegate?.favouriteButtonOnPress(with: note);
     }
 }

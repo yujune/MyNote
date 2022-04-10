@@ -45,7 +45,7 @@ class NoteViewController: UIViewController {
             guard let weakSelf = self else{
                 return
             }
-            weakSelf.vcView.notesCountLabel.text = "\(weakSelf.viewModel.noteArray?.count ?? 0)" + "notes".localized()
+            weakSelf.vcView.notesCountLabel.text = "\(weakSelf.viewModel.noteArray?.count ?? 0) " + "notes".localized()
             weakSelf.vcView.noteTableView.reloadData()
         }
         vcView.categoryButton.addTarget(self, action: #selector(pickerButtonPressed), for: .touchUpInside)
@@ -118,6 +118,7 @@ extension NoteViewController: UITableViewDataSource {
         guard let cell = vcView.noteTableView.dequeueReusableCell(withIdentifier: "NoteTableViewCell") as? NoteTableViewCell else {
             fatalError()
         }
+        cell.delegate = self
         cell.selectionStyle = .none
         cell.updateDisplay(note: viewModel.noteArray?[indexPath.row] ?? Note())
         return cell
@@ -208,4 +209,10 @@ extension NoteViewController: UIPickerViewDataSource   {
 
 extension NoteViewController: UIPickerViewDelegate {
     
+}
+
+extension NoteViewController: NoteTableViewCellDelegate {
+    func favouriteButtonOnPress(with note: Note) {
+        viewModel.favoriteNote(with: note)
+    }
 }
