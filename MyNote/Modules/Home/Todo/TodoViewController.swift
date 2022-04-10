@@ -70,7 +70,7 @@ class TodoViewController: UIViewController {
             print("fail to dequeue")
             return
         }
-        headerView.updateDisplay(with: "\(viewModel.todoArray[TodoSection.Todo.rawValue].count) " + "todo".localized() + "," + " \(viewModel.todoArray[TodoSection.Completed.rawValue].count)" + "completed".localized())
+        headerView.updateDisplay(with: "\(viewModel.todoArray[TodoSection.Todo.rawValue].count) " + "todo".localized() + "," + " \(viewModel.todoArray[TodoSection.Completed.rawValue].count) " + "completed".localized())
         vcView.tableView.tableHeaderView = headerView
     }
 }
