@@ -138,8 +138,20 @@ extension TodoViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete) {
-            viewModel.deleteTodo(with: viewModel.todoArray[indexPath.section][indexPath.row])
-            tableView.deleteRows(at: [indexPath], with: .left)
+            showConfirmationMessage("Are you sure you want to delete".localized()) {
+                
+            } confirmCompletion: { [weak self] in
+                guard let weakSelf = self else {
+                    return
+                }
+                weakSelf.viewModel.deleteTodo(with: weakSelf.viewModel.todoArray[indexPath.section][indexPath.row])
+                //TODO: unable to use deleteRows here. Because todoArray
+                //is a computed property and it is readonly. Unable to update
+                //the todoArray before deleteRows method is called.
+                //tableView.deleteRows(at: [indexPath], with: .left)
+            }
+
+           
         }
     }
 }

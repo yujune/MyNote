@@ -14,6 +14,7 @@ class TodoViewModel: TodoViewModelProtocol {
     var showInfoMessage: ((String) -> Void)?
     var reloadTableViewClosure: (() -> Void)?
     var roloadTableViewHeaderClosure: (() -> Void)?
+    var deleteTableViewAtRow: (() -> Void)?
     var todoArray: [[Todo]] {
         let todoModel = TodoModel()
         let list = todoModel.loadTodo()
@@ -26,8 +27,6 @@ class TodoViewModel: TodoViewModelProtocol {
         return [todoList, completedList]
     }
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
-    var todoList: [[String]] = [["Exercise", "Reading"], ["Swimming"]]
 
     func saveData(with model: TodoModel) {
         model.save()
@@ -49,6 +48,8 @@ class TodoViewModel: TodoViewModelProtocol {
             let result = try context.existingObject(with: todo.objectID)
             context.delete(result)
             try context.save()
+            reloadTableViewClosure?()
+            roloadTableViewHeaderClosure?()
         } catch {
             print(error)
         }
