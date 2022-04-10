@@ -138,12 +138,18 @@ extension NoteViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete) {
-            guard let note = viewModel.noteArray?[indexPath.row] else {
-                return
+            showConfirmationMessage("Are you sure you want to delete".localized()) {
+            } confirmCompletion: { [weak self] in
+                guard let weakSelf = self else {
+                    return
+                }
+                guard let note = weakSelf.viewModel.noteArray?[indexPath.row] else {
+                    return
+                }
+                weakSelf.viewModel.noteArray?.remove(at: indexPath.row)
+                weakSelf.viewModel.deleteNote(with: note)
+                tableView.deleteRows(at: [indexPath], with: .left)
             }
-            viewModel.noteArray?.remove(at: indexPath.row)
-            viewModel.deleteNote(with: note)
-            tableView.deleteRows(at: [indexPath], with: .left)
         }
     }
 }
