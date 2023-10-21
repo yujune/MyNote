@@ -11,6 +11,12 @@ extension String {
     func localized() -> String {
         return NSLocalizedString(self, comment: "")
     }
+    
+    func strikeThrough() -> NSMutableAttributedString {
+        let attributedString = NSMutableAttributedString(string: self)
+        attributedString.addAttribute(NSAttributedString.Key.strikethroughStyle,value: 2, range: NSRange(location: 0, length: attributedString.length))
+        return attributedString
+    }
 }
 
 extension Date {

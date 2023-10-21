@@ -34,13 +34,22 @@ class TodoTableViewCell: UITableViewCell {
     }
     
     func updateDisplay(with todo: Todo) {
+        resetTodoLabel()
         todoModel = todo
         if let isCompleted = todoModel?.isCompleted, isCompleted {
             checkButton.setImage(UIImage(systemName: "checkmark.circle.fill"), for: .normal)
+            todoLabel.textColor = .gray
+            todoLabel.attributedText = todo.name?.strikeThrough()
         }else {
             checkButton.setImage(UIImage(systemName: "circle"), for: .normal)
+            todoLabel.text = todo.name
         }
-        todoLabel.text = todo.name
+        
+    }
+    
+    private func resetTodoLabel() {
+        todoLabel.textColor = .black
+        todoLabel.attributedText = nil;
     }
     
     @IBAction func checkButtonPress(_ sender: UIButton) {
