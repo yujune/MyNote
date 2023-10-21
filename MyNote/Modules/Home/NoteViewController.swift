@@ -25,7 +25,7 @@ class NoteViewController: UIViewController {
         setupBindings()
         viewModel.loadCategoryData()
         if viewModel.hasAnyCategory() {
-            vcView.categoryLabel.text = viewModel.noteCategoryArray?[0].name;
+            setInitialCategoryLabelAsAll()
         } else {
             vcView.categoryLabel.text = "No Category"
         }
@@ -72,6 +72,12 @@ class NoteViewController: UIViewController {
             print("No Category from your database")
         }
         
+    }
+    
+    private func setInitialCategoryLabelAsAll() {
+        vcView.categoryLabel.text = viewModel.noteCategoryArray?.first(where: { category in
+            category.name == CategoryName.all.rawValue
+        })?.name;
     }
     
     private func pickerView(_ title: String){
