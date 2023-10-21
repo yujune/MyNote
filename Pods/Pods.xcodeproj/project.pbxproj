@@ -7,114 +7,113 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02F90CE81C498C6E6878B65893DF1A44 /* NSProcessInfo+RMActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BB12471C394FE437A4FBDF6D9FD0D5 /* NSProcessInfo+RMActionController.m */; };
-		08C1DC4EE027E1F719CDA31EB674D24E /* RMImageAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 16974E7018E9CA8C0772C372B6C87404 /* RMImageAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DF5AC9F368A581FB21BDAF7AB68EB76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DD5F4B878FA0F01B1F493B2D21E3B4 /* Foundation.framework */; };
-		294761E0B3F21753B4FB44884C8490F4 /* UIView+RMActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EBD980183958A8EB3C197D5D0B008E /* UIView+RMActionController.m */; };
-		2D8BCDC3495FE9206E2961DE5E516C4E /* Pods-MyNote-MyNoteUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F0B30855D6EDB7F87D2C0B90061FEF /* Pods-MyNote-MyNoteUITests-dummy.m */; };
-		318DFA3474EEF8DC703C9935438D7B55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A200B833B38129B81864D9B840615FD /* CoreGraphics.framework */; };
-		328158EAB28DE00C097BA2FEF6FCF1B6 /* RMScrollableGroupedAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3778E6BBC017E8BBB2D5C5E154883C41 /* RMScrollableGroupedAction.m */; };
-		336BD6A771CDF0E721635226481ADEFE /* RMPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 482F87B953AA31A83E4D18FBEA0930EC /* RMPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A312870010158E96B91BF672F2786E0 /* RMActionController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8088C8E3BA885411068659D860211540 /* RMActionController.framework */; };
-		3C91B624D25012C3F54E2EC491271CCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DD5F4B878FA0F01B1F493B2D21E3B4 /* Foundation.framework */; };
-		3CFC43AADF6691942A22122D13DCD4E1 /* RMActionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 203C5AB7B1EDF7976392B05F57710314 /* RMActionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F3DE6D124003679FBAAFD53FD6C6521 /* RMActionControllerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F852EDDC19FB3810A7B5E005893EA3F /* RMActionControllerTransition.m */; };
-		606A4BF193257F9B3B78ECBE2A208181 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DD5F4B878FA0F01B1F493B2D21E3B4 /* Foundation.framework */; };
-		654D5CE67C358D6A1B660A26A9190E23 /* NSProcessInfo+RMActionController.h in Headers */ = {isa = PBXBuildFile; fileRef = C7090D92812EA6A913DC6CB3211FA9A0 /* NSProcessInfo+RMActionController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6C3211980D4F68569687C482D993AC1C /* RMAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE2EE0DF9C83CF1D94BC7FAD261E8C5 /* RMAction.m */; };
-		786B5107C9471D3218071C8F2D2BAA2F /* RMAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B32914C283BD5C578A0396F6D63D048 /* RMAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A2F9FA43C98BDDB92887CD8F811A31C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DD5F4B878FA0F01B1F493B2D21E3B4 /* Foundation.framework */; };
-		7E0FAE9E084140B8133EDF85C4B534EA /* RMImageAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB2D59E987740C7BA0E6B0F586AADE /* RMImageAction.m */; };
-		834265773E618B9768504F8801632F00 /* RMAction+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E466923DEEBEE57267843F845539F4 /* RMAction+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		939EA868F7D6121B47A1071376840F10 /* RMPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85533B8B2E13A1F8CE0B2390F6A4B2E0 /* RMPickerViewController.m */; };
-		9451061588588184FC4B2EB13233D65E /* RMActionController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7138848CA9D0E9844EB61BA9A8D2CDD /* RMActionController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A74760A2D863818110E7F46AA4F4B2D /* RMActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A749836AC2D375B1FF5BCAC5CBDA6 /* RMActionController.m */; };
-		9ABF4711B07E07342A9DCDAD39A871F9 /* RMPickerViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10062F6F3137886235F1259D186CB6C0 /* RMPickerViewController-dummy.m */; };
-		A6EC3DF1E275D0757F3C498DA60FA33B /* TagListView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A02014E0735DD324C08E4DAB3A7861 /* TagListView-dummy.m */; };
-		A8207133ADB26E5D5859CBF670ED538B /* Pods-MyNoteTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE818F859B7937F6B0035274CB9EE8 /* Pods-MyNoteTests-dummy.m */; };
-		A91C73F1CAB4414DA2A27D69347432DE /* Pods-MyNote-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FD81405A209AEFD10D5C1BA88B9CA5C /* Pods-MyNote-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA0A0A306E12021E1FCE28FAE0DE946B /* RMScrollableGroupedAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E244F625CD87B5E1C49174F4C5C23DC /* RMScrollableGroupedAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B37785FA5238FAA59807BF6AEBFDC568 /* RMActionController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB54EDEA0E92DE9641B157768D0E5705 /* RMActionController-dummy.m */; };
-		BF58FE7EAD95BD319B5C866988111019 /* Pods-MyNoteTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F11CAC8AAF4A0D0331721805114C7CC9 /* Pods-MyNoteTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2B079CDBCDA378866989DD702DECA7F /* Pods-MyNote-MyNoteUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C39BDC357215B91CDCB96BF33C88A5C0 /* Pods-MyNote-MyNoteUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C81DFDFD26996FED9A87464D315468B1 /* RMPickerViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E033D4F56E9B37458CCC9226A182CFE /* RMPickerViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D05FB12FD569A9E050F6014D57400E68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DD5F4B878FA0F01B1F493B2D21E3B4 /* Foundation.framework */; };
-		D873E920F6CAC3D63428190C85520012 /* TagListView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B82E91F4A220F9D17C15A6CCBF65D5DE /* TagListView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8857C7EFEC671C6D23BACB10087FA7A /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02844929400261328DA3D99B76BDBD1 /* TagView.swift */; };
-		DFDEE464FB58E4BBE4949FEE8F9CDFEF /* RMActionControllerTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = D24A4C219807E0BEF68A19C4F27F4595 /* RMActionControllerTransition.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E045D0630D6A299EF4C3339991F12765 /* Pods-MyNote-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDBF3EFAED1775A852FF945DA180614F /* Pods-MyNote-dummy.m */; };
-		E583ED285BD4284B22EEDD440C00B642 /* RMActionController+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA7505C26862FD79FA9AE9905230925 /* RMActionController+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E68CF69F905F9F58D5CF45A5D69A2D6D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40614777A5E670857F20A8218FFCFB82 /* QuartzCore.framework */; };
-		E6BBD02DE6D603EA8028A046B28896A4 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845187398EABD92F043AD9401916BC8 /* TagListView.swift */; };
-		F1836D635C7FE287335DBC22F1C3D840 /* RMGroupedAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BFD2A6B3348CD35B92820008779FD5 /* RMGroupedAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F35E0A27CE56FF65BE972EBB1F3B684F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DD5F4B878FA0F01B1F493B2D21E3B4 /* Foundation.framework */; };
-		F704202D7D977093A28CF27745CEF5AC /* RMGroupedAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8940477B44597C56397038A916A37E /* RMGroupedAction.m */; };
-		F9EAAF9FBB7DB084E9A21122C3E62125 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACBB65E45CA3406AA71A6A61D4CA616 /* CloseButton.swift */; };
-		FA58942AAE2E21147B1B0CE0D0822E97 /* UIView+RMActionController.h in Headers */ = {isa = PBXBuildFile; fileRef = AFCA7AA5C3D8A77664384E62385DB0E7 /* UIView+RMActionController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0A76A60E79D656805407A0B5D7AA4B89 /* Pods-MyNote-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDBF3EFAED1775A852FF945DA180614F /* Pods-MyNote-dummy.m */; };
+		0DF3914E3CFB1D1321C10587EF6B32D5 /* RMScrollableGroupedAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3778E6BBC017E8BBB2D5C5E154883C41 /* RMScrollableGroupedAction.m */; };
+		1597C3CE5BE8DD8D40A9AD2C8CC620BA /* RMAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE2EE0DF9C83CF1D94BC7FAD261E8C5 /* RMAction.m */; };
+		15F9B9DAB00F8109C18039AD9F22DA91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */; };
+		16CF72CB502A114FB5AABF65E0F8E6B9 /* RMActionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 203C5AB7B1EDF7976392B05F57710314 /* RMActionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17117EEDF3EDA30F067CF0F6F8065D9B /* RMImageAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB2D59E987740C7BA0E6B0F586AADE /* RMImageAction.m */; };
+		1AFB1E0AB63A107F6700B3675D2F5CF1 /* NSProcessInfo+RMActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BB12471C394FE437A4FBDF6D9FD0D5 /* NSProcessInfo+RMActionController.m */; };
+		1C0F7B792E4F049AA7B9910A28E9B7C7 /* RMPickerViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10062F6F3137886235F1259D186CB6C0 /* RMPickerViewController-dummy.m */; };
+		210CFE758783426BE2FD9B6FA837A05F /* RMScrollableGroupedAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E244F625CD87B5E1C49174F4C5C23DC /* RMScrollableGroupedAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21247E823E8F9107A58858F08B46C9DD /* RMActionControllerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F852EDDC19FB3810A7B5E005893EA3F /* RMActionControllerTransition.m */; };
+		2A4DD90C7C5F67649C25E4B51ECB8FAE /* RMActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A749836AC2D375B1FF5BCAC5CBDA6 /* RMActionController.m */; };
+		2F985FBB7862FE6631D0EE37C38787DB /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02844929400261328DA3D99B76BDBD1 /* TagView.swift */; };
+		388EEB8E3CDFBA0E0140521D6E52BE6F /* Pods-MyNote-MyNoteUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C39BDC357215B91CDCB96BF33C88A5C0 /* Pods-MyNote-MyNoteUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A20F0FF94D7CFA6033B554DF1233D86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51AB40693B18F443F75126966ED13E47 /* QuartzCore.framework */; };
+		3EFE2CBC8D19D819393FEA6ACBCC104E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */; };
+		403752E66140D2CFFF1E5B13CB3D6AF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */; };
+		4B15A5DD194D029695FAE8A511506D27 /* TagListView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A02014E0735DD324C08E4DAB3A7861 /* TagListView-dummy.m */; };
+		582A2647A891DB4A2125C34BC6E87386 /* RMGroupedAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BFD2A6B3348CD35B92820008779FD5 /* RMGroupedAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61796C349089F3C61227063FFEAED040 /* RMPickerViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E033D4F56E9B37458CCC9226A182CFE /* RMPickerViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B23EA0952048E23B148EB52E7442C71 /* RMActionController+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA7505C26862FD79FA9AE9905230925 /* RMActionController+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		70B1E4B3DE45647725BF407A8C0F28BD /* RMPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 482F87B953AA31A83E4D18FBEA0930EC /* RMPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75ED91CF8456A94644639B6EE18B829D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */; };
+		7FB6018BA42488B878F2648A667DC4E4 /* RMActionController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7138848CA9D0E9844EB61BA9A8D2CDD /* RMActionController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B56EE9DCB560569E53CB379C07791DB /* Pods-MyNote-MyNoteUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F0B30855D6EDB7F87D2C0B90061FEF /* Pods-MyNote-MyNoteUITests-dummy.m */; };
+		92571A94D7588DFDCDB58157A458ED1E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABB98090B02C131F86931CB9BE54B7A /* CoreGraphics.framework */; };
+		948FCA699AD8637EEBA8BBDB9287FAD3 /* RMAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B32914C283BD5C578A0396F6D63D048 /* RMAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9582EF0336AB056937A713F442DA3E72 /* RMActionController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB54EDEA0E92DE9641B157768D0E5705 /* RMActionController-dummy.m */; };
+		963CF61EDCDA4FBB4A2C1E822242781E /* UIView+RMActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EBD980183958A8EB3C197D5D0B008E /* UIView+RMActionController.m */; };
+		9A4E782A2BE0F8DA77F1CB801440592C /* RMAction+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E466923DEEBEE57267843F845539F4 /* RMAction+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9BFF656C8FEB135CDFFB389EB7CD42E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */; };
+		A41ED4F4B3C21718DAF22F9E017A2E56 /* RMPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85533B8B2E13A1F8CE0B2390F6A4B2E0 /* RMPickerViewController.m */; };
+		AE3C7BDCFCA4900B4332E9FB5B64C9FE /* NSProcessInfo+RMActionController.h in Headers */ = {isa = PBXBuildFile; fileRef = C7090D92812EA6A913DC6CB3211FA9A0 /* NSProcessInfo+RMActionController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B9B5405179C091E1610633C341A8ED53 /* Pods-MyNoteTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE818F859B7937F6B0035274CB9EE8 /* Pods-MyNoteTests-dummy.m */; };
+		BDC2267C4B0D8F1F47FA96287BE02864 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACBB65E45CA3406AA71A6A61D4CA616 /* CloseButton.swift */; };
+		C16D48906EA6C618A28AD3E87B1BD5A9 /* RMGroupedAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8940477B44597C56397038A916A37E /* RMGroupedAction.m */; };
+		C7951521D7D8D91DBA887907EA8E2741 /* Pods-MyNoteTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F11CAC8AAF4A0D0331721805114C7CC9 /* Pods-MyNoteTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CABE1CF5521C2448CF33ABA9F48B9B60 /* RMImageAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 16974E7018E9CA8C0772C372B6C87404 /* RMImageAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3E45DBB45FE17DA444ABF82E79C715B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */; };
+		D5C2604DD628E186B485C9E21006A811 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845187398EABD92F043AD9401916BC8 /* TagListView.swift */; };
+		DD6883323395BAB7FA500B3009FB4B5E /* TagListView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B82E91F4A220F9D17C15A6CCBF65D5DE /* TagListView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDE5EF7D530C40976BE90230A9CF86AD /* RMActionControllerTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = D24A4C219807E0BEF68A19C4F27F4595 /* RMActionControllerTransition.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F2C6F5239DA2B1DFC3944853187D81CC /* Pods-MyNote-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FD81405A209AEFD10D5C1BA88B9CA5C /* Pods-MyNote-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC2B0B46E81D83519F178CF77F2043B1 /* UIView+RMActionController.h in Headers */ = {isa = PBXBuildFile; fileRef = AFCA7AA5C3D8A77664384E62385DB0E7 /* UIView+RMActionController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0B4E7E11D409D87A4A90F548F33047B2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 12066ADDDC81D6D9F1FECEAA97C55D82;
-			remoteInfo = RMActionController;
-		};
-		412766177296C162677BBDF9A9CE14E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 12066ADDDC81D6D9F1FECEAA97C55D82;
-			remoteInfo = RMActionController;
-		};
-		4224C755CA673702164276768112F3AA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9640AC7F85474A229B29922F793F2C9F;
-			remoteInfo = RMPickerViewController;
-		};
-		69359ACC264F1991AC39C3E265FD340A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9640AC7F85474A229B29922F793F2C9F;
-			remoteInfo = RMPickerViewController;
-		};
-		98EBE8228AD075B4BC7A4DA6456AFB96 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 12066ADDDC81D6D9F1FECEAA97C55D82;
-			remoteInfo = RMActionController;
-		};
-		C76113D367BBBFC38AE0C37416AAF54C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B43A58FC22C898DE29F6E12FE9636507;
-			remoteInfo = TagListView;
-		};
-		CDDE23DA004C8529A590A7FCEDF8D66C /* PBXContainerItemProxy */ = {
+		040661022955ECA9DEEE261EA7642006 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 74BB49485432302256A28C26B5DFAEE4;
 			remoteInfo = "Pods-MyNote";
 		};
-		E40A740F42EFA553544FEB0F3AF4A5B3 /* PBXContainerItemProxy */ = {
+		54A17E559C4EDE38CE968F5775CD74FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B43A58FC22C898DE29F6E12FE9636507;
 			remoteInfo = TagListView;
 		};
+		5893AFB5B8069B19C28679B0BB7DF2CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12066ADDDC81D6D9F1FECEAA97C55D82;
+			remoteInfo = RMActionController;
+		};
+		8B78CA0FBD2C814E230321533C5CE654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B43A58FC22C898DE29F6E12FE9636507;
+			remoteInfo = TagListView;
+		};
+		B1E87C8594FF2C9054FB47CE44AF8EEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9640AC7F85474A229B29922F793F2C9F;
+			remoteInfo = RMPickerViewController;
+		};
+		D809D7273D517DB2651A043268C4419D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9640AC7F85474A229B29922F793F2C9F;
+			remoteInfo = RMPickerViewController;
+		};
+		E54BEE241FF9F1AB9CFE7966E1351159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12066ADDDC81D6D9F1FECEAA97C55D82;
+			remoteInfo = RMActionController;
+		};
+		F5E548F9E5AE448F3507DFBD6E985C74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12066ADDDC81D6D9F1FECEAA97C55D82;
+			remoteInfo = RMActionController;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02E466923DEEBEE57267843F845539F4 /* RMAction+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RMAction+Private.h"; path = "RMActionController/Private/RMAction+Private.h"; sourceTree = "<group>"; };
-		02FD6583BC19930E9A5B25123248C26B /* RMPickerViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RMPickerViewController.framework; path = RMPickerViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02FD6583BC19930E9A5B25123248C26B /* RMPickerViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RMPickerViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D40298EC0AC4A3BA7C5CA26D42895B /* RMPickerViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RMPickerViewController.debug.xcconfig; sourceTree = "<group>"; };
 		09BDC160ECFCAF79A5CBC53AB80F7240 /* Pods-MyNoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyNoteTests.debug.xcconfig"; sourceTree = "<group>"; };
 		10062F6F3137886235F1259D186CB6C0 /* RMPickerViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RMPickerViewController-dummy.m"; sourceTree = "<group>"; };
@@ -133,7 +132,6 @@
 		3E5487271FC34DCBD63868687A694F08 /* RMActionController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RMActionController.debug.xcconfig; sourceTree = "<group>"; };
 		3F2FF1643BFB55C1D141DD1E8594C286 /* Pods-MyNote-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyNote-Info.plist"; sourceTree = "<group>"; };
 		3FD81405A209AEFD10D5C1BA88B9CA5C /* Pods-MyNote-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyNote-umbrella.h"; sourceTree = "<group>"; };
-		40614777A5E670857F20A8218FFCFB82 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		40ECA1683CF41B49818C68A62738B715 /* TagListView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-prefix.pch"; sourceTree = "<group>"; };
 		41A4859F90C51AFFD4767A6AD6E3A55F /* Pods-MyNoteTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyNoteTests.modulemap"; sourceTree = "<group>"; };
 		45A943DCC80925BB5167D27330C83697 /* RMActionController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RMActionController.release.xcconfig; sourceTree = "<group>"; };
@@ -141,7 +139,8 @@
 		4BD9EEB5CCDB2AEC11202D94E2CEE4E7 /* RMPickerViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RMPickerViewController-Info.plist"; sourceTree = "<group>"; };
 		4D23F34D979C911ACBC9798085DD09CF /* Pods-MyNote-MyNoteUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyNote-MyNoteUITests-frameworks.sh"; sourceTree = "<group>"; };
 		4DC2EA34D1812C5879BE14DC03B8ADA9 /* Pods-MyNote-MyNoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyNote-MyNoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4F81DF9F03BE3F9567AE2798E1602A38 /* Pods_MyNote_MyNoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyNote_MyNoteUITests.framework; path = "Pods-MyNote-MyNoteUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F81DF9F03BE3F9567AE2798E1602A38 /* Pods-MyNote-MyNoteUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MyNote-MyNoteUITests"; path = Pods_MyNote_MyNoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51AB40693B18F443F75126966ED13E47 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		52AE818F859B7937F6B0035274CB9EE8 /* Pods-MyNoteTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyNoteTests-dummy.m"; sourceTree = "<group>"; };
 		5ACBB65E45CA3406AA71A6A61D4CA616 /* CloseButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloseButton.swift; path = TagListView/CloseButton.swift; sourceTree = "<group>"; };
 		5BAB2D59E987740C7BA0E6B0F586AADE /* RMImageAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RMImageAction.m; path = RMActionController/Actions/RMImageAction.m; sourceTree = "<group>"; };
@@ -152,21 +151,18 @@
 		74CEF505075E028B617972CF0E71C009 /* Pods-MyNote-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyNote-acknowledgements.markdown"; sourceTree = "<group>"; };
 		75274B475D531E6F086FC66FB8BE85A2 /* Pods-MyNote.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyNote.modulemap"; sourceTree = "<group>"; };
 		7C24DEB5C7A43CF88B96483C49356B16 /* RMActionController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RMActionController-Info.plist"; sourceTree = "<group>"; };
-		8088C8E3BA885411068659D860211540 /* RMActionController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RMActionController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		840B17CBD122BEDE7784EFA7E729407D /* RMPickerViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RMPickerViewController-prefix.pch"; sourceTree = "<group>"; };
 		85533B8B2E13A1F8CE0B2390F6A4B2E0 /* RMPickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RMPickerViewController.m; path = RMPickerViewController/RMPickerViewController.m; sourceTree = "<group>"; };
-		85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TagListView.framework; path = TagListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8692149DF8625E0159B298B0B6B79756 /* RMActionController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RMActionController.framework; path = RMActionController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A200B833B38129B81864D9B840615FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TagListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8692149DF8625E0159B298B0B6B79756 /* RMActionController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RMActionController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA7505C26862FD79FA9AE9905230925 /* RMActionController+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RMActionController+Private.h"; path = "RMActionController/Private/RMActionController+Private.h"; sourceTree = "<group>"; };
 		8D0C35170C3C7462F5067380BA8069B4 /* Pods-MyNote-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyNote-frameworks.sh"; sourceTree = "<group>"; };
 		8E244F625CD87B5E1C49174F4C5C23DC /* RMScrollableGroupedAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RMScrollableGroupedAction.h; path = "RMActionController/Grouping Actions/RMScrollableGroupedAction.h"; sourceTree = "<group>"; };
 		934EFEB03CA1863297C1A67D9EBF9F00 /* TagListView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagListView.debug.xcconfig; sourceTree = "<group>"; };
-		94DD5F4B878FA0F01B1F493B2D21E3B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		95EB115ABAECB96A086456B8CA3DC1DF /* TagListView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TagListView.modulemap; sourceTree = "<group>"; };
 		9BE2EE0DF9C83CF1D94BC7FAD261E8C5 /* RMAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RMAction.m; path = RMActionController/Actions/RMAction.m; sourceTree = "<group>"; };
 		9D6F8AAC945003EE81B0530A533B0C2B /* RMPickerViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RMPickerViewController.release.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F852EDDC19FB3810A7B5E005893EA3F /* RMActionControllerTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RMActionControllerTransition.m; path = RMActionController/Animations/RMActionControllerTransition.m; sourceTree = "<group>"; };
 		A5F0B30855D6EDB7F87D2C0B90061FEF /* Pods-MyNote-MyNoteUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyNote-MyNoteUITests-dummy.m"; sourceTree = "<group>"; };
 		A7138848CA9D0E9844EB61BA9A8D2CDD /* RMActionController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RMActionController-umbrella.h"; sourceTree = "<group>"; };
@@ -180,15 +176,17 @@
 		C3BB12471C394FE437A4FBDF6D9FD0D5 /* NSProcessInfo+RMActionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSProcessInfo+RMActionController.m"; path = "RMActionController/Categories/NSProcessInfo+RMActionController.m"; sourceTree = "<group>"; };
 		C6606E6129D637807E66ADAF5DE447B4 /* Pods-MyNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyNote.debug.xcconfig"; sourceTree = "<group>"; };
 		C7090D92812EA6A913DC6CB3211FA9A0 /* NSProcessInfo+RMActionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSProcessInfo+RMActionController.h"; path = "RMActionController/Categories/NSProcessInfo+RMActionController.h"; sourceTree = "<group>"; };
+		CABB98090B02C131F86931CB9BE54B7A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		CB0FFA82728F57892E5A213EA5533E5E /* Pods-MyNote-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyNote-acknowledgements.plist"; sourceTree = "<group>"; };
+		CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CB54EDEA0E92DE9641B157768D0E5705 /* RMActionController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RMActionController-dummy.m"; sourceTree = "<group>"; };
 		D1B1013BD7F2767B8FF24BA621487080 /* Pods-MyNote-MyNoteUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyNote-MyNoteUITests-Info.plist"; sourceTree = "<group>"; };
 		D24A4C219807E0BEF68A19C4F27F4595 /* RMActionControllerTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RMActionControllerTransition.h; path = RMActionController/Animations/RMActionControllerTransition.h; sourceTree = "<group>"; };
 		D57F4C84646AD99278F39A7455C80EC3 /* TagListView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TagListView-Info.plist"; sourceTree = "<group>"; };
 		D9A02014E0735DD324C08E4DAB3A7861 /* TagListView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TagListView-dummy.m"; sourceTree = "<group>"; };
-		DC12563FA36466B8B79707793D27A60A /* Pods_MyNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyNote.framework; path = "Pods-MyNote.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC12563FA36466B8B79707793D27A60A /* Pods-MyNote */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MyNote"; path = Pods_MyNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D2892C47A61C2B011CA861DF14334A /* Pods-MyNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyNote.release.xcconfig"; sourceTree = "<group>"; };
-		E64F17CEAD1C66B298E586C26930CB4D /* Pods_MyNoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyNoteTests.framework; path = "Pods-MyNoteTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64F17CEAD1C66B298E586C26930CB4D /* Pods-MyNoteTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MyNoteTests"; path = Pods_MyNoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDBF3EFAED1775A852FF945DA180614F /* Pods-MyNote-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyNote-dummy.m"; sourceTree = "<group>"; };
 		F11CAC8AAF4A0D0331721805114C7CC9 /* Pods-MyNoteTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyNoteTests-umbrella.h"; sourceTree = "<group>"; };
 		F74A749836AC2D375B1FF5BCAC5CBDA6 /* RMActionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RMActionController.m; path = RMActionController/RMActionController.m; sourceTree = "<group>"; };
@@ -197,60 +195,67 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2056A57C90C75A85F37D02F1EB775E6C /* Frameworks */ = {
+		1B775F24C07AC931B266EA029A7425AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F35E0A27CE56FF65BE972EBB1F3B684F /* Foundation.framework in Frameworks */,
-				3A312870010158E96B91BF672F2786E0 /* RMActionController.framework in Frameworks */,
+				92571A94D7588DFDCDB58157A458ED1E /* CoreGraphics.framework in Frameworks */,
+				403752E66140D2CFFF1E5B13CB3D6AF6 /* Foundation.framework in Frameworks */,
+				3A20F0FF94D7CFA6033B554DF1233D86 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		500E209783C2C6EF4ACEBA91B03ECDFE /* Frameworks */ = {
+		65EC31236E213F850DDF9BE63BDEC00E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				606A4BF193257F9B3B78ECBE2A208181 /* Foundation.framework in Frameworks */,
+				3EFE2CBC8D19D819393FEA6ACBCC104E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55035971B4F62260FAFC99022E042BB0 /* Frameworks */ = {
+		6C4D75BA27A0EADBE6FE7628797FB4E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DF5AC9F368A581FB21BDAF7AB68EB76 /* Foundation.framework in Frameworks */,
+				D3E45DBB45FE17DA444ABF82E79C715B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91EE54F6F2259433C24BB227DE7FBE0A /* Frameworks */ = {
+		885987B7360B45AD595D12CA102A7D56 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D05FB12FD569A9E050F6014D57400E68 /* Foundation.framework in Frameworks */,
+				9BFF656C8FEB135CDFFB389EB7CD42E2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6DFF689CFC3D9D4B87CEEBB6FDBC593 /* Frameworks */ = {
+		BBB43C74DEB5B6735800974A95315E05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				318DFA3474EEF8DC703C9935438D7B55 /* CoreGraphics.framework in Frameworks */,
-				3C91B624D25012C3F54E2EC491271CCF /* Foundation.framework in Frameworks */,
-				E68CF69F905F9F58D5CF45A5D69A2D6D /* QuartzCore.framework in Frameworks */,
+				75ED91CF8456A94644639B6EE18B829D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1703ECBE2030D3AA1DC701DBEEB2AED /* Frameworks */ = {
+		F2CE1FD4A5DB838649959F48150FE498 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A2F9FA43C98BDDB92887CD8F811A31C /* Foundation.framework in Frameworks */,
+				15F9B9DAB00F8109C18039AD9F22DA91 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D6691D8CB3D493006A8661C7CFED31A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		08D675BBC47B762A92D54E6DDB5B4008 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,16 +264,6 @@
 				AA86DD80120322DEDC6F880E8DCA9DD0 /* TagListView */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		0EE05A15CB65793A85169F8A284B49E0 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				8A200B833B38129B81864D9B840615FD /* CoreGraphics.framework */,
-				94DD5F4B878FA0F01B1F493B2D21E3B4 /* Foundation.framework */,
-				40614777A5E670857F20A8218FFCFB82 /* QuartzCore.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		11BBBB4AD3A52401AE983E13B6EAAAE0 /* Pods-MyNote-MyNoteUITests */ = {
@@ -315,15 +310,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		1CA45A98C0AA9FE5CC562562A97AAB10 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8088C8E3BA885411068659D860211540 /* RMActionController.framework */,
-				0EE05A15CB65793A85169F8A284B49E0 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		2120E97644B95F5D53396A1657E0CC76 /* Pods-MyNoteTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,7 +349,6 @@
 				70EBD980183958A8EB3C197D5D0B008E /* UIView+RMActionController.m */,
 				2536DC11CFC4121B38DA6DC76E292E44 /* Support Files */,
 			);
-			name = RMActionController;
 			path = RMActionController;
 			sourceTree = "<group>";
 		};
@@ -382,6 +367,29 @@
 			path = "../Target Support Files/RMActionController";
 			sourceTree = "<group>";
 		};
+		30E74E2514C44D1A40893BB072909D02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC12563FA36466B8B79707793D27A60A /* Pods-MyNote */,
+				4F81DF9F03BE3F9567AE2798E1602A38 /* Pods-MyNote-MyNoteUITests */,
+				E64F17CEAD1C66B298E586C26930CB4D /* Pods-MyNoteTests */,
+				8692149DF8625E0159B298B0B6B79756 /* RMActionController.framework */,
+				02FD6583BC19930E9A5B25123248C26B /* RMPickerViewController.framework */,
+				85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D6691D8CB3D493006A8661C7CFED31A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CABB98090B02C131F86931CB9BE54B7A /* CoreGraphics.framework */,
+				CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */,
+				51AB40693B18F443F75126966ED13E47 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		AA86DD80120322DEDC6F880E8DCA9DD0 /* TagListView */ = {
 			isa = PBXGroup;
 			children = (
@@ -390,7 +398,6 @@
 				B02844929400261328DA3D99B76BDBD1 /* TagView.swift */,
 				D411DD74861FE74D2D495570A80D336D /* Support Files */,
 			);
-			name = TagListView;
 			path = TagListView;
 			sourceTree = "<group>";
 		};
@@ -416,7 +423,6 @@
 				85533B8B2E13A1F8CE0B2390F6A4B2E0 /* RMPickerViewController.m */,
 				C08D23A3ACE6D590CE45ECF4BBB40731 /* Support Files */,
 			);
-			name = RMPickerViewController;
 			path = RMPickerViewController;
 			sourceTree = "<group>";
 		};
@@ -424,9 +430,9 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				1CA45A98C0AA9FE5CC562562A97AAB10 /* Frameworks */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
 				08D675BBC47B762A92D54E6DDB5B4008 /* Pods */,
-				EC0F0561BBA85EE27923ADFCFBD65B46 /* Products */,
+				30E74E2514C44D1A40893BB072909D02 /* Products */,
 				19EFEF4E97279EBA20B6C9927E32D001 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -446,78 +452,65 @@
 			path = "../Target Support Files/TagListView";
 			sourceTree = "<group>";
 		};
-		EC0F0561BBA85EE27923ADFCFBD65B46 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DC12563FA36466B8B79707793D27A60A /* Pods_MyNote.framework */,
-				4F81DF9F03BE3F9567AE2798E1602A38 /* Pods_MyNote_MyNoteUITests.framework */,
-				E64F17CEAD1C66B298E586C26930CB4D /* Pods_MyNoteTests.framework */,
-				8692149DF8625E0159B298B0B6B79756 /* RMActionController.framework */,
-				02FD6583BC19930E9A5B25123248C26B /* RMPickerViewController.framework */,
-				85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0CDE0A5822DFD368908C328FF2988834 /* Headers */ = {
+		5D53C41BA5B182D7A6E2E16323F10A14 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A91C73F1CAB4414DA2A27D69347432DE /* Pods-MyNote-umbrella.h in Headers */,
+				388EEB8E3CDFBA0E0140521D6E52BE6F /* Pods-MyNote-MyNoteUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		897A5431BAB8634D8A792626219D7EF2 /* Headers */ = {
+		6FD51B6B76FA13FCF9651FB04C6CE80A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C81DFDFD26996FED9A87464D315468B1 /* RMPickerViewController-umbrella.h in Headers */,
-				336BD6A771CDF0E721635226481ADEFE /* RMPickerViewController.h in Headers */,
+				F2C6F5239DA2B1DFC3944853187D81CC /* Pods-MyNote-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92D6044BC12A580820E2F586FD29367C /* Headers */ = {
+		93D68D9F97BA197C15777B50A917128E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF58FE7EAD95BD319B5C866988111019 /* Pods-MyNoteTests-umbrella.h in Headers */,
+				70B1E4B3DE45647725BF407A8C0F28BD /* RMPickerViewController.h in Headers */,
+				61796C349089F3C61227063FFEAED040 /* RMPickerViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FA322CA0734CA401F466AE4DAD0CF22 /* Headers */ = {
+		CE65DB8366E29ECDC5806C846389417C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D873E920F6CAC3D63428190C85520012 /* TagListView-umbrella.h in Headers */,
+				C7951521D7D8D91DBA887907EA8E2741 /* Pods-MyNoteTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEC64D130B370C5F28B5F907C085D932 /* Headers */ = {
+		CF5B820BE4D9DE22B3C97BE564D6353B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2B079CDBCDA378866989DD702DECA7F /* Pods-MyNote-MyNoteUITests-umbrella.h in Headers */,
+				AE3C7BDCFCA4900B4332E9FB5B64C9FE /* NSProcessInfo+RMActionController.h in Headers */,
+				948FCA699AD8637EEBA8BBDB9287FAD3 /* RMAction.h in Headers */,
+				9A4E782A2BE0F8DA77F1CB801440592C /* RMAction+Private.h in Headers */,
+				16CF72CB502A114FB5AABF65E0F8E6B9 /* RMActionController.h in Headers */,
+				6B23EA0952048E23B148EB52E7442C71 /* RMActionController+Private.h in Headers */,
+				7FB6018BA42488B878F2648A667DC4E4 /* RMActionController-umbrella.h in Headers */,
+				EDE5EF7D530C40976BE90230A9CF86AD /* RMActionControllerTransition.h in Headers */,
+				582A2647A891DB4A2125C34BC6E87386 /* RMGroupedAction.h in Headers */,
+				CABE1CF5521C2448CF33ABA9F48B9B60 /* RMImageAction.h in Headers */,
+				210CFE758783426BE2FD9B6FA837A05F /* RMScrollableGroupedAction.h in Headers */,
+				FC2B0B46E81D83519F178CF77F2043B1 /* UIView+RMActionController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA741EC5CFB5A8F8C2A5647AD36C846C /* Headers */ = {
+		E2889FA6F2003E5684D206A20D8AA5B0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				654D5CE67C358D6A1B660A26A9190E23 /* NSProcessInfo+RMActionController.h in Headers */,
-				834265773E618B9768504F8801632F00 /* RMAction+Private.h in Headers */,
-				786B5107C9471D3218071C8F2D2BAA2F /* RMAction.h in Headers */,
-				E583ED285BD4284B22EEDD440C00B642 /* RMActionController+Private.h in Headers */,
-				9451061588588184FC4B2EB13233D65E /* RMActionController-umbrella.h in Headers */,
-				3CFC43AADF6691942A22122D13DCD4E1 /* RMActionController.h in Headers */,
-				DFDEE464FB58E4BBE4949FEE8F9CDFEF /* RMActionControllerTransition.h in Headers */,
-				F1836D635C7FE287335DBC22F1C3D840 /* RMGroupedAction.h in Headers */,
-				08C1DC4EE027E1F719CDA31EB674D24E /* RMImageAction.h in Headers */,
-				AA0A0A306E12021E1FCE28FAE0DE946B /* RMScrollableGroupedAction.h in Headers */,
-				FA58942AAE2E21147B1B0CE0D0822E97 /* UIView+RMActionController.h in Headers */,
+				DD6883323395BAB7FA500B3009FB4B5E /* TagListView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,12 +519,12 @@
 /* Begin PBXNativeTarget section */
 		12066ADDDC81D6D9F1FECEAA97C55D82 /* RMActionController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D703F9F1DD55F08F00F8F8EF3E06072B /* Build configuration list for PBXNativeTarget "RMActionController" */;
+			buildConfigurationList = 53A4D6F84B13AE1617BD6EADB6BB0035 /* Build configuration list for PBXNativeTarget "RMActionController" */;
 			buildPhases = (
-				FA741EC5CFB5A8F8C2A5647AD36C846C /* Headers */,
-				9D321E790A6C2FB2F2C0B99AF848BD8D /* Sources */,
-				B6DFF689CFC3D9D4B87CEEBB6FDBC593 /* Frameworks */,
-				82057128EC76EA810372FF8DEB59D275 /* Resources */,
+				CF5B820BE4D9DE22B3C97BE564D6353B /* Headers */,
+				6B2DACDA3266D5840CB5C4F1B85A8A9F /* Sources */,
+				1B775F24C07AC931B266EA029A7425AB /* Frameworks */,
+				F2BA2E858FE5E74E4EA5F612738D5C07 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -544,78 +537,78 @@
 		};
 		59A9AD7FED53D1DDE29F08512BEAF189 /* Pods-MyNote-MyNoteUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BEB60E6690FCDD14B4421607EF876AB /* Build configuration list for PBXNativeTarget "Pods-MyNote-MyNoteUITests" */;
+			buildConfigurationList = 910189BD7D1A058265B2AF8336A5B48F /* Build configuration list for PBXNativeTarget "Pods-MyNote-MyNoteUITests" */;
 			buildPhases = (
-				CEC64D130B370C5F28B5F907C085D932 /* Headers */,
-				F16ADA9539FE75B6C590BED2CC33A5B6 /* Sources */,
-				55035971B4F62260FAFC99022E042BB0 /* Frameworks */,
-				B558821BD2F8968AB3679E0B14AD16CE /* Resources */,
+				5D53C41BA5B182D7A6E2E16323F10A14 /* Headers */,
+				A7DCECB85065B9414D99EC94F6F9C0A1 /* Sources */,
+				65EC31236E213F850DDF9BE63BDEC00E /* Frameworks */,
+				7C61639142F842120250318F959BF71C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8C97BEF961AC3E658C56E398E6105700 /* PBXTargetDependency */,
-				779BAD49324D573BC8595E9AAD9A4E72 /* PBXTargetDependency */,
-				AAFBF3563632F4D3FA9CF31ABA5E9320 /* PBXTargetDependency */,
+				C203F6C2685CD15153605828920D9AC4 /* PBXTargetDependency */,
+				B9AC6C979FCBAD1874EF4031C5C4D76B /* PBXTargetDependency */,
+				B3F583FAFF57C38F88478AA1A7E2BD99 /* PBXTargetDependency */,
 			);
 			name = "Pods-MyNote-MyNoteUITests";
-			productName = "Pods-MyNote-MyNoteUITests";
-			productReference = 4F81DF9F03BE3F9567AE2798E1602A38 /* Pods_MyNote_MyNoteUITests.framework */;
+			productName = Pods_MyNote_MyNoteUITests;
+			productReference = 4F81DF9F03BE3F9567AE2798E1602A38 /* Pods-MyNote-MyNoteUITests */;
 			productType = "com.apple.product-type.framework";
 		};
 		6A2B18D5AAC5F1F986E076CA106FB62C /* Pods-MyNoteTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A785AB74EDC9757BA46BB200FE6BB1A2 /* Build configuration list for PBXNativeTarget "Pods-MyNoteTests" */;
+			buildConfigurationList = 95A81891CA1D3F5E501548265043A915 /* Build configuration list for PBXNativeTarget "Pods-MyNoteTests" */;
 			buildPhases = (
-				92D6044BC12A580820E2F586FD29367C /* Headers */,
-				1D47838D0DB71479200C8B7CC39FF0C0 /* Sources */,
-				500E209783C2C6EF4ACEBA91B03ECDFE /* Frameworks */,
-				B35C507A64E3C6F5BC67D562D9D5CCDF /* Resources */,
+				CE65DB8366E29ECDC5806C846389417C /* Headers */,
+				DCC76593549161C5B03BAA976515871A /* Sources */,
+				F2CE1FD4A5DB838649959F48150FE498 /* Frameworks */,
+				BADFB3BA0A27E20726D6BB4B934BE179 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5E57E73455D47B9EF735C68352B9A60C /* PBXTargetDependency */,
+				2C24C36AFCB1E004BABA20EA463E3A7E /* PBXTargetDependency */,
 			);
 			name = "Pods-MyNoteTests";
-			productName = "Pods-MyNoteTests";
-			productReference = E64F17CEAD1C66B298E586C26930CB4D /* Pods_MyNoteTests.framework */;
+			productName = Pods_MyNoteTests;
+			productReference = E64F17CEAD1C66B298E586C26930CB4D /* Pods-MyNoteTests */;
 			productType = "com.apple.product-type.framework";
 		};
 		74BB49485432302256A28C26B5DFAEE4 /* Pods-MyNote */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27D64E0DECEC0904BFD45C4FF39678BA /* Build configuration list for PBXNativeTarget "Pods-MyNote" */;
+			buildConfigurationList = 338254214F6B96126BDECFF5F4EBBD28 /* Build configuration list for PBXNativeTarget "Pods-MyNote" */;
 			buildPhases = (
-				0CDE0A5822DFD368908C328FF2988834 /* Headers */,
-				BCC207C34581FBE2B07277EE68691529 /* Sources */,
-				91EE54F6F2259433C24BB227DE7FBE0A /* Frameworks */,
-				4D011F85CEFADBFFCEDFE4326DF35BE4 /* Resources */,
+				6FD51B6B76FA13FCF9651FB04C6CE80A /* Headers */,
+				5B37166798AD120D9A9DEC10B76FBD28 /* Sources */,
+				6C4D75BA27A0EADBE6FE7628797FB4E6 /* Frameworks */,
+				B6D77FB69E77604D9652D7B7B8B66418 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				54245556BA9D2F42EED904082BB396C6 /* PBXTargetDependency */,
-				0965D477D196C63B338BF43DFCFF83DF /* PBXTargetDependency */,
-				1A5021276BD36BBE20B417315E2FE71F /* PBXTargetDependency */,
+				8604DF2AC28BB1F24D94BA0D88C9C120 /* PBXTargetDependency */,
+				EDE30B841EC0C3D2A41B36478BB3D19B /* PBXTargetDependency */,
+				B10C570E935D3A95568C5204FD716169 /* PBXTargetDependency */,
 			);
 			name = "Pods-MyNote";
-			productName = "Pods-MyNote";
-			productReference = DC12563FA36466B8B79707793D27A60A /* Pods_MyNote.framework */;
+			productName = Pods_MyNote;
+			productReference = DC12563FA36466B8B79707793D27A60A /* Pods-MyNote */;
 			productType = "com.apple.product-type.framework";
 		};
 		9640AC7F85474A229B29922F793F2C9F /* RMPickerViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1A08ABC2213500BF50BAE286D918B52 /* Build configuration list for PBXNativeTarget "RMPickerViewController" */;
+			buildConfigurationList = AA75CB5DCC8C89CB40FB6BB4801DC101 /* Build configuration list for PBXNativeTarget "RMPickerViewController" */;
 			buildPhases = (
-				897A5431BAB8634D8A792626219D7EF2 /* Headers */,
-				F4459A4872E81A752D93CE1FF7395E8E /* Sources */,
-				2056A57C90C75A85F37D02F1EB775E6C /* Frameworks */,
-				111951C401E21387A8DE2C3882B5C6AF /* Resources */,
+				93D68D9F97BA197C15777B50A917128E /* Headers */,
+				4A34CECBE092A46AF339D38F0BDCC6C7 /* Sources */,
+				BBB43C74DEB5B6735800974A95315E05 /* Frameworks */,
+				A3B4537F8E34C9A5125BB61BE81B1A69 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F7A64ED102FB198704470E4F74BE828C /* PBXTargetDependency */,
+				00A74B6758E0FAFE28FDACB3C606BC4C /* PBXTargetDependency */,
 			);
 			name = RMPickerViewController;
 			productName = RMPickerViewController;
@@ -624,12 +617,12 @@
 		};
 		B43A58FC22C898DE29F6E12FE9636507 /* TagListView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D0B1A26E4E3B0F19211CAB90190291C /* Build configuration list for PBXNativeTarget "TagListView" */;
+			buildConfigurationList = 44697AAFAE74B58335611BB12149A629 /* Build configuration list for PBXNativeTarget "TagListView" */;
 			buildPhases = (
-				9FA322CA0734CA401F466AE4DAD0CF22 /* Headers */,
-				E74F27944B92DE20ACDB098B23D6560E /* Sources */,
-				F1703ECBE2030D3AA1DC701DBEEB2AED /* Frameworks */,
-				6BC538A98D210BCB26CE139DFBE834A8 /* Resources */,
+				E2889FA6F2003E5684D206A20D8AA5B0 /* Headers */,
+				3FE02A0D85C2B8A0EAB733A9705E9A8F /* Sources */,
+				885987B7360B45AD595D12CA102A7D56 /* Frameworks */,
+				5452694D3A318C0033A76B9612DCE58B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -646,19 +639,19 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = EC0F0561BBA85EE27923ADFCFBD65B46 /* Products */;
+			productRefGroup = 30E74E2514C44D1A40893BB072909D02 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -673,42 +666,42 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		111951C401E21387A8DE2C3882B5C6AF /* Resources */ = {
+		5452694D3A318C0033A76B9612DCE58B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D011F85CEFADBFFCEDFE4326DF35BE4 /* Resources */ = {
+		7C61639142F842120250318F959BF71C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6BC538A98D210BCB26CE139DFBE834A8 /* Resources */ = {
+		A3B4537F8E34C9A5125BB61BE81B1A69 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82057128EC76EA810372FF8DEB59D275 /* Resources */ = {
+		B6D77FB69E77604D9652D7B7B8B66418 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B35C507A64E3C6F5BC67D562D9D5CCDF /* Resources */ = {
+		BADFB3BA0A27E20726D6BB4B934BE179 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B558821BD2F8968AB3679E0B14AD16CE /* Resources */ = {
+		F2BA2E858FE5E74E4EA5F612738D5C07 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -718,266 +711,121 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1D47838D0DB71479200C8B7CC39FF0C0 /* Sources */ = {
+		3FE02A0D85C2B8A0EAB733A9705E9A8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8207133ADB26E5D5859CBF670ED538B /* Pods-MyNoteTests-dummy.m in Sources */,
+				BDC2267C4B0D8F1F47FA96287BE02864 /* CloseButton.swift in Sources */,
+				D5C2604DD628E186B485C9E21006A811 /* TagListView.swift in Sources */,
+				4B15A5DD194D029695FAE8A511506D27 /* TagListView-dummy.m in Sources */,
+				2F985FBB7862FE6631D0EE37C38787DB /* TagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D321E790A6C2FB2F2C0B99AF848BD8D /* Sources */ = {
+		4A34CECBE092A46AF339D38F0BDCC6C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02F90CE81C498C6E6878B65893DF1A44 /* NSProcessInfo+RMActionController.m in Sources */,
-				6C3211980D4F68569687C482D993AC1C /* RMAction.m in Sources */,
-				B37785FA5238FAA59807BF6AEBFDC568 /* RMActionController-dummy.m in Sources */,
-				9A74760A2D863818110E7F46AA4F4B2D /* RMActionController.m in Sources */,
-				3F3DE6D124003679FBAAFD53FD6C6521 /* RMActionControllerTransition.m in Sources */,
-				F704202D7D977093A28CF27745CEF5AC /* RMGroupedAction.m in Sources */,
-				7E0FAE9E084140B8133EDF85C4B534EA /* RMImageAction.m in Sources */,
-				328158EAB28DE00C097BA2FEF6FCF1B6 /* RMScrollableGroupedAction.m in Sources */,
-				294761E0B3F21753B4FB44884C8490F4 /* UIView+RMActionController.m in Sources */,
+				A41ED4F4B3C21718DAF22F9E017A2E56 /* RMPickerViewController.m in Sources */,
+				1C0F7B792E4F049AA7B9910A28E9B7C7 /* RMPickerViewController-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCC207C34581FBE2B07277EE68691529 /* Sources */ = {
+		5B37166798AD120D9A9DEC10B76FBD28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E045D0630D6A299EF4C3339991F12765 /* Pods-MyNote-dummy.m in Sources */,
+				0A76A60E79D656805407A0B5D7AA4B89 /* Pods-MyNote-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E74F27944B92DE20ACDB098B23D6560E /* Sources */ = {
+		6B2DACDA3266D5840CB5C4F1B85A8A9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9EAAF9FBB7DB084E9A21122C3E62125 /* CloseButton.swift in Sources */,
-				A6EC3DF1E275D0757F3C498DA60FA33B /* TagListView-dummy.m in Sources */,
-				E6BBD02DE6D603EA8028A046B28896A4 /* TagListView.swift in Sources */,
-				D8857C7EFEC671C6D23BACB10087FA7A /* TagView.swift in Sources */,
+				1AFB1E0AB63A107F6700B3675D2F5CF1 /* NSProcessInfo+RMActionController.m in Sources */,
+				1597C3CE5BE8DD8D40A9AD2C8CC620BA /* RMAction.m in Sources */,
+				2A4DD90C7C5F67649C25E4B51ECB8FAE /* RMActionController.m in Sources */,
+				9582EF0336AB056937A713F442DA3E72 /* RMActionController-dummy.m in Sources */,
+				21247E823E8F9107A58858F08B46C9DD /* RMActionControllerTransition.m in Sources */,
+				C16D48906EA6C618A28AD3E87B1BD5A9 /* RMGroupedAction.m in Sources */,
+				17117EEDF3EDA30F067CF0F6F8065D9B /* RMImageAction.m in Sources */,
+				0DF3914E3CFB1D1321C10587EF6B32D5 /* RMScrollableGroupedAction.m in Sources */,
+				963CF61EDCDA4FBB4A2C1E822242781E /* UIView+RMActionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F16ADA9539FE75B6C590BED2CC33A5B6 /* Sources */ = {
+		A7DCECB85065B9414D99EC94F6F9C0A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D8BCDC3495FE9206E2961DE5E516C4E /* Pods-MyNote-MyNoteUITests-dummy.m in Sources */,
+				8B56EE9DCB560569E53CB379C07791DB /* Pods-MyNote-MyNoteUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4459A4872E81A752D93CE1FF7395E8E /* Sources */ = {
+		DCC76593549161C5B03BAA976515871A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ABF4711B07E07342A9DCDAD39A871F9 /* RMPickerViewController-dummy.m in Sources */,
-				939EA868F7D6121B47A1071376840F10 /* RMPickerViewController.m in Sources */,
+				B9B5405179C091E1610633C341A8ED53 /* Pods-MyNoteTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0965D477D196C63B338BF43DFCFF83DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RMPickerViewController;
-			target = 9640AC7F85474A229B29922F793F2C9F /* RMPickerViewController */;
-			targetProxy = 69359ACC264F1991AC39C3E265FD340A /* PBXContainerItemProxy */;
-		};
-		1A5021276BD36BBE20B417315E2FE71F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TagListView;
-			target = B43A58FC22C898DE29F6E12FE9636507 /* TagListView */;
-			targetProxy = C76113D367BBBFC38AE0C37416AAF54C /* PBXContainerItemProxy */;
-		};
-		54245556BA9D2F42EED904082BB396C6 /* PBXTargetDependency */ = {
+		00A74B6758E0FAFE28FDACB3C606BC4C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RMActionController;
 			target = 12066ADDDC81D6D9F1FECEAA97C55D82 /* RMActionController */;
-			targetProxy = 412766177296C162677BBDF9A9CE14E5 /* PBXContainerItemProxy */;
+			targetProxy = F5E548F9E5AE448F3507DFBD6E985C74 /* PBXContainerItemProxy */;
 		};
-		5E57E73455D47B9EF735C68352B9A60C /* PBXTargetDependency */ = {
+		2C24C36AFCB1E004BABA20EA463E3A7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MyNote";
 			target = 74BB49485432302256A28C26B5DFAEE4 /* Pods-MyNote */;
-			targetProxy = CDDE23DA004C8529A590A7FCEDF8D66C /* PBXContainerItemProxy */;
+			targetProxy = 040661022955ECA9DEEE261EA7642006 /* PBXContainerItemProxy */;
 		};
-		779BAD49324D573BC8595E9AAD9A4E72 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RMPickerViewController;
-			target = 9640AC7F85474A229B29922F793F2C9F /* RMPickerViewController */;
-			targetProxy = 4224C755CA673702164276768112F3AA /* PBXContainerItemProxy */;
-		};
-		8C97BEF961AC3E658C56E398E6105700 /* PBXTargetDependency */ = {
+		8604DF2AC28BB1F24D94BA0D88C9C120 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RMActionController;
 			target = 12066ADDDC81D6D9F1FECEAA97C55D82 /* RMActionController */;
-			targetProxy = 0B4E7E11D409D87A4A90F548F33047B2 /* PBXContainerItemProxy */;
+			targetProxy = 5893AFB5B8069B19C28679B0BB7DF2CC /* PBXContainerItemProxy */;
 		};
-		AAFBF3563632F4D3FA9CF31ABA5E9320 /* PBXTargetDependency */ = {
+		B10C570E935D3A95568C5204FD716169 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TagListView;
 			target = B43A58FC22C898DE29F6E12FE9636507 /* TagListView */;
-			targetProxy = E40A740F42EFA553544FEB0F3AF4A5B3 /* PBXContainerItemProxy */;
+			targetProxy = 8B78CA0FBD2C814E230321533C5CE654 /* PBXContainerItemProxy */;
 		};
-		F7A64ED102FB198704470E4F74BE828C /* PBXTargetDependency */ = {
+		B3F583FAFF57C38F88478AA1A7E2BD99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TagListView;
+			target = B43A58FC22C898DE29F6E12FE9636507 /* TagListView */;
+			targetProxy = 54A17E559C4EDE38CE968F5775CD74FF /* PBXContainerItemProxy */;
+		};
+		B9AC6C979FCBAD1874EF4031C5C4D76B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RMPickerViewController;
+			target = 9640AC7F85474A229B29922F793F2C9F /* RMPickerViewController */;
+			targetProxy = D809D7273D517DB2651A043268C4419D /* PBXContainerItemProxy */;
+		};
+		C203F6C2685CD15153605828920D9AC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RMActionController;
 			target = 12066ADDDC81D6D9F1FECEAA97C55D82 /* RMActionController */;
-			targetProxy = 98EBE8228AD075B4BC7A4DA6456AFB96 /* PBXContainerItemProxy */;
+			targetProxy = E54BEE241FF9F1AB9CFE7966E1351159 /* PBXContainerItemProxy */;
+		};
+		EDE30B841EC0C3D2A41B36478BB3D19B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RMPickerViewController;
+			target = 9640AC7F85474A229B29922F793F2C9F /* RMPickerViewController */;
+			targetProxy = B1E87C8594FF2C9054FB47CE44AF8EEC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1EB3AA3336B28D6ECC46DE20379065F1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 279D3A339C6B1AFCDFAA551D1B356BC4 /* Pods-MyNote-MyNoteUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MyNote-MyNoteUITests/Pods-MyNote-MyNoteUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MyNote-MyNoteUITests/Pods-MyNote-MyNoteUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3EB4A5A7754A3CEA95695D996AFE9144 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6606E6129D637807E66ADAF5DE447B4 /* Pods-MyNote.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MyNote/Pods-MyNote-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MyNote/Pods-MyNote.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		480ED7A85E569838B67575A837B1BD39 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE4A16CFD9D2FC9E7EBA52C1BD1F4B54 /* TagListView.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TagListView/TagListView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TagListView/TagListView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/TagListView/TagListView.modulemap";
-				PRODUCT_MODULE_NAME = TagListView;
-				PRODUCT_NAME = TagListView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		520C35D9C8F988AFA28B63D282076492 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D6F8AAC945003EE81B0530A533B0C2B /* RMPickerViewController.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RMPickerViewController/RMPickerViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RMPickerViewController/RMPickerViewController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RMPickerViewController/RMPickerViewController.modulemap";
-				PRODUCT_MODULE_NAME = RMPickerViewController;
-				PRODUCT_NAME = RMPickerViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5972005D9B117CA5FB1E0B34FE4E6E98 /* Debug */ = {
+		1DE6C4B6CDF1349FE1F36C64B96B7611 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4DC2EA34D1812C5879BE14DC03B8ADA9 /* Pods-MyNote-MyNoteUITests.debug.xcconfig */;
 			buildSettings = {
@@ -993,7 +841,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MyNote-MyNoteUITests/Pods-MyNote-MyNoteUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1014,69 +862,7 @@
 			};
 			name = Debug;
 		};
-		71243899B61152433AAE34EE86456EE7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		7369B248AA57A8637E9F1C7A0A0A6C77 /* Debug */ = {
+		1FCB52B3449F8A3F4591F02289F87A96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 07D40298EC0AC4A3BA7C5CA26D42895B /* RMPickerViewController.debug.xcconfig */;
 			buildSettings = {
@@ -1091,7 +877,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/RMPickerViewController/RMPickerViewController-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/RMPickerViewController/RMPickerViewController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1110,7 +896,148 @@
 			};
 			name = Debug;
 		};
-		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
+		384A72E3E068C921B597313AA9B1BDA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E5487271FC34DCBD63868687A694F08 /* RMActionController.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RMActionController/RMActionController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RMActionController/RMActionController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RMActionController/RMActionController.modulemap";
+				PRODUCT_MODULE_NAME = RMActionController;
+				PRODUCT_NAME = RMActionController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3A16C0ED48C57E701341A89AD748EF07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A943DCC80925BB5167D27330C83697 /* RMActionController.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RMActionController/RMActionController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RMActionController/RMActionController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RMActionController/RMActionController.modulemap";
+				PRODUCT_MODULE_NAME = RMActionController;
+				PRODUCT_NAME = RMActionController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5161B79C79A01F0218A0E6DEF33AC2DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09BDC160ECFCAF79A5CBC53AB80F7240 /* Pods-MyNoteTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyNoteTests/Pods-MyNoteTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyNoteTests/Pods-MyNoteTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		834EB4946D6A2FB5AE88CC68E8BB19BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D6F8AAC945003EE81B0530A533B0C2B /* RMPickerViewController.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RMPickerViewController/RMPickerViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RMPickerViewController/RMPickerViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RMPickerViewController/RMPickerViewController.modulemap";
+				PRODUCT_MODULE_NAME = RMPickerViewController;
+				PRODUCT_NAME = RMPickerViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1163,7 +1090,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1176,113 +1103,7 @@
 			};
 			name = Debug;
 		};
-		7E81A55BF3F612CAD8047A12B2B86A04 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45A943DCC80925BB5167D27330C83697 /* RMActionController.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RMActionController/RMActionController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RMActionController/RMActionController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RMActionController/RMActionController.modulemap";
-				PRODUCT_MODULE_NAME = RMActionController;
-				PRODUCT_NAME = RMActionController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		80D2C5D0ECAE3C1400A73E0C459326F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09BDC160ECFCAF79A5CBC53AB80F7240 /* Pods-MyNoteTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MyNoteTests/Pods-MyNoteTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MyNoteTests/Pods-MyNoteTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		96DC880C25E6BC7A0B2A37307F3E3B7D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E5487271FC34DCBD63868687A694F08 /* RMActionController.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RMActionController/RMActionController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RMActionController/RMActionController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RMActionController/RMActionController.modulemap";
-				PRODUCT_MODULE_NAME = RMActionController;
-				PRODUCT_NAME = RMActionController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A49959D751784CC7161D6F6CDA0776F3 /* Release */ = {
+		913CDC3DF2B491222898D32637EFEB72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1D2892C47A61C2B011CA861DF14334A /* Pods-MyNote.release.xcconfig */;
 			buildSettings = {
@@ -1298,7 +1119,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MyNote/Pods-MyNote-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1320,7 +1141,69 @@
 			};
 			name = Release;
 		};
-		B95255CFE23BB552B35A1E9E09172CFA /* Debug */ = {
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BAEA7D1EDC7FEBD36CB69FA32CDBC546 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 934EFEB03CA1863297C1A67D9EBF9F00 /* TagListView.debug.xcconfig */;
 			buildSettings = {
@@ -1335,7 +1218,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TagListView/TagListView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TagListView/TagListView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1354,7 +1237,80 @@
 			};
 			name = Debug;
 		};
-		DB3F73D9F2F01A472DAA086E02AB5EC7 /* Release */ = {
+		BFBF9023551C3651D5BB75C645E42678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE4A16CFD9D2FC9E7EBA52C1BD1F4B54 /* TagListView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TagListView/TagListView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TagListView/TagListView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TagListView/TagListView.modulemap";
+				PRODUCT_MODULE_NAME = TagListView;
+				PRODUCT_NAME = TagListView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C15F3DAEE5732011CF889F9C47A707B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 279D3A339C6B1AFCDFAA551D1B356BC4 /* Pods-MyNote-MyNoteUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyNote-MyNoteUITests/Pods-MyNote-MyNoteUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyNote-MyNoteUITests/Pods-MyNote-MyNoteUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4823E1D5B8AD4DAD38773524FB0DF79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35BB1D0FC2FB3A5FDCAAF2233A6962C2 /* Pods-MyNoteTests.release.xcconfig */;
 			buildSettings = {
@@ -1370,7 +1326,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MyNoteTests/Pods-MyNoteTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1392,23 +1348,60 @@
 			};
 			name = Release;
 		};
+		FAD7FF13D0EC09F77DBB4B71A5CA9E97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6606E6129D637807E66ADAF5DE447B4 /* Pods-MyNote.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyNote/Pods-MyNote-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyNote/Pods-MyNote.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		27D64E0DECEC0904BFD45C4FF39678BA /* Build configuration list for PBXNativeTarget "Pods-MyNote" */ = {
+		338254214F6B96126BDECFF5F4EBBD28 /* Build configuration list for PBXNativeTarget "Pods-MyNote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3EB4A5A7754A3CEA95695D996AFE9144 /* Debug */,
-				A49959D751784CC7161D6F6CDA0776F3 /* Release */,
+				FAD7FF13D0EC09F77DBB4B71A5CA9E97 /* Debug */,
+				913CDC3DF2B491222898D32637EFEB72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BEB60E6690FCDD14B4421607EF876AB /* Build configuration list for PBXNativeTarget "Pods-MyNote-MyNoteUITests" */ = {
+		44697AAFAE74B58335611BB12149A629 /* Build configuration list for PBXNativeTarget "TagListView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5972005D9B117CA5FB1E0B34FE4E6E98 /* Debug */,
-				1EB3AA3336B28D6ECC46DE20379065F1 /* Release */,
+				BAEA7D1EDC7FEBD36CB69FA32CDBC546 /* Debug */,
+				BFBF9023551C3651D5BB75C645E42678 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1416,44 +1409,44 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
-				71243899B61152433AAE34EE86456EE7 /* Release */,
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D0B1A26E4E3B0F19211CAB90190291C /* Build configuration list for PBXNativeTarget "TagListView" */ = {
+		53A4D6F84B13AE1617BD6EADB6BB0035 /* Build configuration list for PBXNativeTarget "RMActionController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B95255CFE23BB552B35A1E9E09172CFA /* Debug */,
-				480ED7A85E569838B67575A837B1BD39 /* Release */,
+				384A72E3E068C921B597313AA9B1BDA0 /* Debug */,
+				3A16C0ED48C57E701341A89AD748EF07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1A08ABC2213500BF50BAE286D918B52 /* Build configuration list for PBXNativeTarget "RMPickerViewController" */ = {
+		910189BD7D1A058265B2AF8336A5B48F /* Build configuration list for PBXNativeTarget "Pods-MyNote-MyNoteUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7369B248AA57A8637E9F1C7A0A0A6C77 /* Debug */,
-				520C35D9C8F988AFA28B63D282076492 /* Release */,
+				1DE6C4B6CDF1349FE1F36C64B96B7611 /* Debug */,
+				C15F3DAEE5732011CF889F9C47A707B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A785AB74EDC9757BA46BB200FE6BB1A2 /* Build configuration list for PBXNativeTarget "Pods-MyNoteTests" */ = {
+		95A81891CA1D3F5E501548265043A915 /* Build configuration list for PBXNativeTarget "Pods-MyNoteTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				80D2C5D0ECAE3C1400A73E0C459326F3 /* Debug */,
-				DB3F73D9F2F01A472DAA086E02AB5EC7 /* Release */,
+				5161B79C79A01F0218A0E6DEF33AC2DB /* Debug */,
+				E4823E1D5B8AD4DAD38773524FB0DF79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D703F9F1DD55F08F00F8F8EF3E06072B /* Build configuration list for PBXNativeTarget "RMActionController" */ = {
+		AA75CB5DCC8C89CB40FB6BB4801DC101 /* Build configuration list for PBXNativeTarget "RMPickerViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				96DC880C25E6BC7A0B2A37307F3E3B7D /* Debug */,
-				7E81A55BF3F612CAD8047A12B2B86A04 /* Release */,
+				1FCB52B3449F8A3F4591F02289F87A96 /* Debug */,
+				834EB4946D6A2FB5AE88CC68E8BB19BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
