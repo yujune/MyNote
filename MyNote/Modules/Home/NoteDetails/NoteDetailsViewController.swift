@@ -21,7 +21,9 @@ class NoteDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBindings()
-        setupCollectionView()
+        if (!(viewModel?.isCreateNote ?? true)) {
+            setupCollectionView()
+        }
         viewModel.loadCategoryData()
         vcView.updateDisplay(note: viewModel.note ?? nil)
         self.tabBarController?.tabBar.isHidden = true
